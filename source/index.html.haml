@@ -2,9 +2,450 @@
 title: Welcome to Middleman
 ---
 
-.welcome
-  .logo
-    =image_tag "middleman-logo.svg"
-  %h1 Middleman is Running HTML.HAML Time
-  %p.doc
-    =link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank"
+.page.js-page
+  %header.hero
+    .row.center-xs
+      %h1.hero-headline.ptxl Flexbox Grid
+    .row.center-xs
+      %p.hero-copy
+        A grid system based on the
+        %a{:href => "http://caniuse.com/#search=flexbox"}
+          %code.inline-anchor flex
+        display property.
+    .row.center-xs
+      %a.button.invisible-xs.visible-md{:href => "https://github.com/kristoferjoseph/flexboxgrid/archive/v6.3.0.zip"} Download
+      %a.button{:href => "https://github.com/kristoferjoseph/flexboxgrid"} Github
+  .wrap.container-fluid
+    %a{:name => "responsive"}
+    %section.page-section
+      %h2 Responsive
+      %p Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md &amp; lg viewport widths.
+      .row
+        .col-xs-12.col-sm-3.col-md-2.col-lg-1
+          .box-row
+        .col-xs-6.col-sm-6.col-md-8.col-lg-10
+          .box-row
+        .col-xs-6.col-sm-3.col-md-2.col-lg-1
+          .box-row
+      .row
+        .col-xs-12.col-sm-3.col-md-2.col-lg-1
+          .box-row
+        .col-xs-12.col-sm-9.col-md-10.col-lg-11
+          .box-row
+      .row
+        .col-xs-10.col-sm-6.col-md-8.col-lg-10
+          .box-row
+        .col-xs-2.col-sm-6.col-md-4.col-lg-2
+          .box-row
+      %pre
+        %code
+          .row
+            .col-xs-12.col-sm-8.col-md-6.col-lg-4
+              .box Responsive
+    %a{:name => "fluid"}
+    %section.page-section
+      %br
+        %h2 Fluid
+        %p Percent based widths allow fluid resizing of columns and rows.
+        .row
+          .col-xs-12
+            .box-row
+        .row
+          .col-xs-1
+            .box-row
+          .col-xs-11
+            .box-row
+        .row
+          .col-xs-2
+            .box-row
+          .col-xs-10
+            .box-row
+        .row
+          .col-xs-3
+            .box-row
+          .col-xs-9
+            .box-row
+        .row
+          .col-xs-4
+            .box-row
+          .col-xs-8
+            .box-row
+        .row
+          .col-xs-5
+            .box-row
+          .col-xs-7
+            .box-row
+        .row
+          .col-xs-6
+            .box-row
+          .col-xs-6
+            .box-row
+        %pre
+          %code
+            :preserve
+              .col-xs-6 {
+                flex-basis: 50%;
+              }    %a{:name => "syntax"}
+    %section.page-section
+      %h2 Simple Syntax
+      %p All you need to remember is row, column, content.
+      %pre
+        %code
+          .row
+            .col-xs-12
+              .box 12
+    %a{:name => "offsets"}
+    %section.page-section
+      %h2 Offsets
+      %p Offset a column
+      .row
+        .col-xs-offset-11.col-xs-1
+          .box-row
+      .row
+        .col-xs-offset-10.col-xs-2
+          .box-row
+      .row
+        .col-xs-offset-9.col-xs-3
+          .box-row
+      .row
+        .col-xs-offset-8.col-xs-4
+          .box-row
+      .row
+        .col-xs-offset-7.col-xs-5
+          .box-row
+      .row
+        .col-xs-offset-6.col-xs-6
+          .box-row
+      .row
+        .col-xs-offset-5.col-xs-7
+          .box-row
+      .row
+        .col-xs-offset-4.col-xs-8
+          .box-row
+      .row
+        .col-xs-offset-3.col-xs-9
+          .box-row
+      .row
+        .col-xs-offset-2.col-xs-10
+          .box-row
+      .row
+        .col-xs-offset-1.col-xs-11
+          .box-row
+      %pre
+        %code
+          .row
+            .col-xs-offset-3.col-xs-9
+              .box offset
+    %a{:name => "auto"}
+    %section.page-section
+      %h2 Auto Width
+      %p Add any number of auto sizing columns to a row. Let the grid figure it out.
+      .row
+        .col-xs
+          .box-row
+        .col-xs
+          .box-row
+      .row
+        .col-xs
+          .box-row
+        .col-xs
+          .box-row
+        .col-xs
+          .box-row
+      %pre
+        %code
+          .row
+            .col-xs
+              .box auto
+    %a{:name => "nested"}
+    %section.page-section
+      %h2 Nested Grids
+      %p Nest grids inside grids inside grids.
+      .row
+        .col-xs-7
+          .box.box-container
+            .row
+              .col-xs-9
+                .box-first.box-container
+                  .row
+                    .col-xs-4
+                      .box-nested
+                    .col-xs-8
+                      .box-nested
+              .col-xs-3
+                .box-first.box-container
+                  .row
+                    .col-xs
+                      .box-nested
+        .col-xs-5
+          .box.box-container
+            .row
+              .col-xs-12
+                .box-first.box-container
+                  .row
+                    .col-xs-6
+                      .box-nested
+                    .col-xs-6
+                      .box-nested
+      %pre
+        %code
+          .row
+            .col-xs
+              .box auto
+              .row
+                .col-xs
+                  .box auto
+  %a{:name => "alignment"}
+  %section.page-section
+    %h2 Alignment
+    %p Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column
+    %h3
+      %code .start-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.start-xs
+            .col-xs-6
+              .box-nested
+    %pre
+      %code
+        .row.start-xs
+          .col-xs-6
+            .box
+              start
+    %h3
+      %code .center-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.center-xs
+            .col-xs-6
+              .box-nested
+    %pre
+      %code
+        .row.center-xs
+          .col-xs-6
+            .box
+              start
+    %h3
+      %code .end-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.end-xs
+            .col-xs-6
+              .box-nested
+    %pre
+      %code
+        .row.end-xs
+          .col-xs-6
+            .box
+              end
+    %p Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.
+    = succeed "Example" do
+      .row
+        .col-xs-12
+          .box.box-container
+            .row.center-xs.end-sm.start-lg
+              .col-xs-6
+                .box-nested
+    %pre
+      %code
+        .row.center-xs.end-sm.start-lg
+          .col-xs-6
+            .box
+              All together now
+    %h3
+      %code .top-
+    .row.top-xs
+      .col-xs-6
+        .box-large
+      .col-xs-6
+        .box
+    %pre
+      %code
+        .row.top-xs
+          .col-xs-6
+            .box
+              top
+    %h3
+      %code .middle-
+    .row.middle-xs
+      .col-xs-6
+        .box-large
+      .col-xs-6
+        .box
+    %pre
+      %code
+        .row.middle-xs
+          .col-xs-6
+            .box
+              center
+    %h3
+      %code .bottom-
+    .row.bottom-xs
+      .col-xs-6
+        .box-large
+      .col-xs-6
+        .box
+    %pre
+      %code
+        .row.bottom-xs
+          .col-xs-6
+            .box
+              bottom
+  %a{:name => "distribution"}
+  %section.page-section
+    %h2 Distribution
+    %p Add classes to distribute the contents of a row or column.
+    %h3
+      %code .around-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.around-xs
+            .col-xs-2
+              .box-nested
+            .col-xs-2
+              .box-nested
+            .col-xs-2
+              .box-nested
+    %pre
+      %code
+        .row.around-xs
+          .col-xs-2
+            .box
+              around
+          .col-xs-2
+            .box
+              around
+          .col-xs-2
+            .box
+              around
+    %h3
+      %code .between-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.between-xs
+            .col-xs-2
+              .box-nested
+            .col-xs-2
+              .box-nested
+            .col-xs-2
+              .box-nested
+    %pre
+      %code
+        .row.between-xs
+          .col-xs-2
+            .box
+              between
+          .col-xs-2
+            .box
+              between
+          .col-xs-2
+            .box
+              between
+  %a{:name => "reordering"}
+  %section.page-section
+    %h2 Reordering
+    %p Add classes to reorder columns.
+    %h3
+      %code .first-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row
+            .col-xs-2
+              .box-first 1
+            .col-xs-2
+              .box-first 2
+            .col-xs-2
+              .box-first 3
+            .col-xs-2
+              .box-first 4
+            .col-xs-2
+              .box-first 5
+            .col-xs-2.first-xs
+              .box-nested 6
+    %pre
+      %code
+        .row
+          .col-xs-2
+            .box
+              1
+          .col-xs-2
+            .box
+              2
+          .col-xs-2.first-xs
+            .box
+              3
+    %h3
+      %code .last-
+    .row
+      .col-xs-12
+        .box.box-container
+          .row
+            .col-xs-2.last-xs
+              .box-nested 1
+            .col-xs-2
+              .box-first 2
+            .col-xs-2
+              .box-first 3
+            .col-xs-2
+              .box-first 4
+            .col-xs-2
+              .box-first 5
+            .col-xs-2
+              .box-first 6
+    %pre
+      %code
+        .row
+          .col-xs-2.last-xs
+            .box
+              1
+          .col-xs-2
+            .box
+              2
+          .col-xs-2
+            .box
+              3
+  %a{:name => "reversing"}
+  %section.page-section
+    %h2 Reversing
+    %h3
+      %code .reverse
+    .row
+      .col-xs-12
+        .box.box-container
+          .row.reverse
+            .col-xs-2
+              .box-nested 1
+            .col-xs-2
+              .box-nested 2
+            .col-xs-2
+              .box-nested 3
+            .col-xs-2
+              .box-nested 4
+            .col-xs-2
+              .box-nested 5
+            .col-xs-2
+              .box-nested 6
+    %pre
+      %code
+        .row.reverse
+          .col-xs-2
+            .box
+              1
+          .col-xs-2
+            .box
+              2
+          .col-xs-2
+            .box
+              3
+  %footer.page-footer
+    .row
+      .col-xs.start
+        %a.tag{:href => "http://twitter.com/dam"} @dam ♡s you
+      .col-xs.end
+        %a.link-top{:href => "#top"} ⇪ back to top
