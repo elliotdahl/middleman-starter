@@ -5,10 +5,15 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
          
-    %title= current_page.data.title || "Middleman"
+    %title= current_page.data.title || "Under Construction"
+
+
     %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}
+
+
     =stylesheet_link_tag :site
     =javascript_include_tag :all
-  %body.layout{:class => page_classes}
-    %div.hamlonly
+
+    
+  %body{:class => page_classes}
     = yield
