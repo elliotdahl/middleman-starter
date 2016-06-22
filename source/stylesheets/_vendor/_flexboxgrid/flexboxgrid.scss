@@ -1,5 +1,15 @@
 /* Uncomment and set these variables to customize the grid. */
 
+.full-vh {
+    height:100vh;
+}
+
+.vert-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container-fluid {
     margin-right: auto;
     margin-left: auto;

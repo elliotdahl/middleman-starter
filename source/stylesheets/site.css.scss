@@ -1,20 +1,29 @@
 @charset "utf-8";
 
+////Variables
 @import "_custom/variables";
 
 ////Vendor---------------------------
 	//Skeleton
+	//-------------------------------
 @import "_vendor/_skeleton/skeleton";
 	//Flexboxgrid
+	//-------------------------------
 @import "_vendor/_flexboxgrid/flexboxgrid";
-@import "_vendor/_flexboxgrid/index-example";
+//@import "_vendor/_flexboxgrid/index-example";
 	//Google Material (load colors OR all of material)
+	//-------------------------------
 @import "_vendor/_material/colors";
 //@import "_vendor/_material/material";
+
+
 
 ////Custom---------------------------
 @import "_custom/oo-whitespace";
 @import "_custom/style";
+@import "_custom/media-sizes";
+@import "_custom/typography";
+@import "_custom/video";
 
 //Normalize
 @import "normalize";

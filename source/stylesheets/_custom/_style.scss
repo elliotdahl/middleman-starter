@@ -13,3 +13,31 @@ body {
 *:after {
     box-sizing: border-box;
 }
+
+
+section {
+	position:relative;
+}
+
+
+.hero {
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf,
+.clear {
+  content: "";
+  display: table;
+  clear: both; }
+
+
