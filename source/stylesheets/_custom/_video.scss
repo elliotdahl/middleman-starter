@@ -18,12 +18,11 @@
     height: auto;
     min-width: 100%;
     min-height: 100%;
-    background-color:#000;
-    
+    background-color: #000;
     //Put a BG image for when it loads. Should be first frame
     //-------------------------------------------------------
-    // background: url(../../images/video-bg-placehold.png) #000 no-repeat center center fixed;
-    // background-size: 100% auto;
+    background: url(../../images/video-bg-placehold.png) #000 no-repeat center center fixed;
+    background-size: 100% auto;
 }
 
 //stop loading for mobile devices
