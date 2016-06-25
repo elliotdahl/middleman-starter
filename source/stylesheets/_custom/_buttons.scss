@@ -6,70 +6,195 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    display: inline-block;
+    display: inline-flex;
     height: ($spacing-base*4);
-    padding: 0 30px;
+    padding: 0 ($spacing-base*3);
+    vertical-align: middle;
     color: #555;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: ($spacing-base*4);
-    letter-spacing: .1rem;
+
+    line-height: 28px; //32px - 4px borders
+    letter-spacing: .05rem;
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
     border-radius: 2px;
-    border: 1px solid #bbb;
+    border: 2px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
+    .svgicon {
+        font-size:18px;
+        padding:2px;
+    }
+}
+.btn-icon {
+    padding:0 5px;
 }
 .btn-lg {
 	height: ($spacing-base*5);	
-	line-height: ($spacing-base*5);
+	line-height: 36px; //40px - 4px borders
+    font-size:16px;
+    &.btn-icon {
+        padding:0 8px;
+    }
+    .svgicon {
+        font-size:20px;
+
+    }
 }
 .btn-sm {
 	height: ($spacing-base*3);	
-	line-height: ($spacing-base*3);
+	line-height: 20px; //24px - 4px borders
 	font-size:12px;
+    &.btn-icon {
+        padding:0 2px;
+    }
+    .svgicon {
+        font-size:16px;
+
+    }
+}
+button.disabled,
+.button.disabled {
+    opacity:.5;
+    cursor:default;
+    pointer-events: none;
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
-    outline: 0;
+//Default Button
+//---------------------------------------
+button.btn-default,
+.button.btn-default,
+input[type="submit"].btn-default:hover,
+input[type="reset"].btn-default:hover,
+input[type="button"].btn-default:hover, {
+    background-color:$btn-default-color;
+    color:#fff;
+    border-color:$btn-default-color;
+    .svgicon {
+        fill:#fff;
+    }
+} 
+
+.button.btn-default:hover,
+button.btn-default:hover,
+input[type="submit"].btn-default:hover,
+input[type="reset"].btn-default:hover,
+input[type="button"].btn-default:hover,
+.button.btn-default:focus,
+button.btn-default:focus,
+input[type="submit"].btn-default:focus,
+input[type="reset"].btn-default:focus,
+input[type="button"].btn-default:focus {
+    background-color:$btn-default-color-hover;
+    color:#fff;
+    border-color:$btn-default-color-hover;
+    outline:none;
+    .svgicon {
+        fill:#fff;
+    }
+}
+//Default Alt Button
+//---------------------------------------
+button.btn-default-alt,
+.button.btn-default-alt,
+input[type="submit"].btn-default-alt:hover,
+input[type="reset"].btn-default-alt:hover,
+input[type="button"].btn-default-alt:hover, {
+    background-color:transparent;
+    color:$btn-default-color;
+    border-color:$btn-default-color;
+    .svgicon {
+        fill:$btn-default-color;
+    }
+} 
+
+.button.btn-default-alt:hover,
+button.btn-default-alt:hover,
+input[type="submit"].btn-default-alt:hover,
+input[type="reset"].btn-default-alt:hover,
+input[type="button"].btn-default-alt:hover,
+.button.btn-default-alt:focus,
+button.btn-default-alt:focus,
+input[type="submit"].btn-default-alt:focus,
+input[type="reset"].btn-default-alt:focus,
+input[type="button"].btn-default-alt:focus {
+    background-color:transparent;
+    color:$btn-default-color-hover;
+    border-color:$btn-default-color-hover;
+    outline:none;
+    .svgicon {
+        fill:$btn-default-color-hover;
+    }
 }
 
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-    color: #FFF;
-    background-color: #33C3F0;
-    border-color: #33C3F0;
+//highlight Button
+//---------------------------------------
+button.btn-highlight,
+.button.btn-highlight,
+input[type="submit"].btn-highlight:hover,
+input[type="reset"].btn-highlight:hover,
+input[type="button"].btn-highlight:hover, {
+    background-color:$btn-highlight-color;
+    color:#fff;
+    border-color:$btn-highlight-color;
+    .svgicon {
+        fill:#fff;
+    }
+} 
+
+.button.btn-highlight:hover,
+button.btn-highlight:hover,
+input[type="submit"].btn-highlight:hover,
+input[type="reset"].btn-highlight:hover,
+input[type="button"].btn-highlight:hover,
+.button.btn-highlight:focus,
+button.btn-highlight:focus,
+input[type="submit"].btn-highlight:focus,
+input[type="reset"].btn-highlight:focus,
+input[type="button"].btn-highlight:focus {
+    background-color:$btn-highlight-color-hover;
+    color:#fff;
+    border-color:$btn-highlight-color-hover;
+    outline:none;
+    .svgicon {
+        fill:#fff;
+    }
+}
+//highlight Alt Button
+//---------------------------------------
+button.btn-highlight-alt,
+.button.btn-highlight-alt,
+input[type="submit"].btn-highlight-alt:hover,
+input[type="reset"].btn-highlight-alt:hover,
+input[type="button"].btn-highlight-alt:hover, {
+    background-color:transparent;
+    color:$btn-highlight-color;
+    border-color:$btn-highlight-color;
+    .svgicon {
+        fill:$btn-highlight-color;
+    }
+} 
+
+.button.btn-highlight-alt:hover,
+button.btn-highlight-alt:hover,
+input[type="submit"].btn-highlight-alt:hover,
+input[type="reset"].btn-highlight-alt:hover,
+input[type="button"].btn-highlight-alt:hover,
+.button.btn-highlight-alt:focus,
+button.btn-highlight-alt:focus,
+input[type="submit"].btn-highlight-alt:focus,
+input[type="reset"].btn-highlight-alt:focus,
+input[type="button"].btn-highlight-alt:focus {
+    background-color:transparent;
+    color:$btn-highlight-color-hover;
+    border-color:$btn-highlight-color-hover;
+    outline:none;
+    .svgicon {
+        fill:$btn-highlight-color;
+    }
 }
 
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-    color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
-}
