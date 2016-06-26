@@ -1,11 +1,12 @@
 ---
-title: Style Guide
+title: Styleguide
 ---
 
 .page
   %section.mdl-color--amber-500
     .section-content.margin-auto.paxl.mdl-color--white
-      %h1.txt-c The Styleguide
+      %h1.txt-c.mbm.shirkhand The 8px Foundation 
+      %h3.txt-c The Styleguide
       
   %section.mdl-color--amber-500
     .section-content.margin-auto.paxl.mdl-color--white
@@ -22,7 +23,22 @@ title: Style Guide
         .col-xs-12
           %button.btn-highlight Highlight 
           %button.btn-highlight-alt Highlight Alt
-      %h4 Icon Buttons
+
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %button.btn-positive Positive
+          %button.btn-positive-alt Positive Alt
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %button.btn-negative Negative
+          %button.btn-negative-alt Negative Alt
+      %h3 Disabled
+      
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %button.btn-default.disabled Button
+          %button.btn-default-alt.disabled Alt Button
+      %h3 Icon Buttons
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.btn-lg
@@ -43,6 +59,12 @@ title: Style Guide
           %button.btn-default.btn-icon
             .svgicon
               =partial 'images/svg-lib/ic_add_48px.svg'
+          %button.btn-default-alt.btn-icon
+            .svgicon
+              =partial 'images/svg-lib/ic_add_48px.svg'
+          %button.btn-positive.btn-icon
+            .svgicon
+              =partial 'images/svg-lib/ic_add_48px.svg'
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.btn-sm
@@ -52,9 +74,9 @@ title: Style Guide
           %button.btn-default.btn-icon.btn-sm
             .svgicon
               =partial 'images/svg-lib/ic_add_48px.svg'
-           
+
           
-      %h4 Sizes
+      %h3 Sizes
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.btn-sm 
@@ -62,7 +84,39 @@ title: Style Guide
           %button.btn-default default
           %button.btn-default.btn-lg 
             %div large
+  %section.mdl-color--orange-500
+    .section-content.margin-auto.paxl.mdl-color--white
+      %h1 Forms
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %form
+            .form-group
+              %label Email
+              %input.form-control{:type => "email", :placeholder => "Enter email"}
+              %button.btn-default Submit
 
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %form
+            .form-group.form-inline
+              %label Email
+              %input.form-control{:type => "email", :placeholder => "Enter email"}
+              %button.btn-default Submit
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %form
+            .form-group.form-inline
+              %label Email
+              %input.form-control.disabled{:type => "email", :placeholder => "Enter email"}
+              %button.btn-default.disabled Submit
+
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %form
+            .form-group.form-inline.form-lg
+              %label Large
+              %input.form-control{:type => "text", :placeholder => "Larger"}
+              %button.btn-default.btn-lg Large Btn
   %section.mdl-color--orange-500
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Grid
@@ -148,7 +202,22 @@ title: Style Guide
             Add Circle Outline
           %code
             ic_add_circle_outline_48px.svg
-        
+  %section.mdl-color--orange-500
+    .section-content.margin-auto.paxl.mdl-color--white
+      %h1 Typography
+      .row.no-gutter.phxl
+        .col-xs-12.phxl
+          %h1 H1 (base)*5 = 40px
+          %h2 H2 (base)*4 = 32px
+          %h3 H3 (base)*3 = 40px
+          %h4 H4 20px
+          %h5 H5 18px
+          %h6 H6 13px
+          %p Paragraph Tag
+          .type-sm Type-Small 12px
+          .type-default Type-Default 14px
+          .type-lg Type-Large 16px
+  
 
         
 

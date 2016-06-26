@@ -131,7 +131,7 @@ input[type="button"].btn-default-alt:focus {
     }
 }
 
-//highlight Button
+//Highlight Button
 //---------------------------------------
 button.btn-highlight,
 .button.btn-highlight,
@@ -164,7 +164,7 @@ input[type="button"].btn-highlight:focus {
         fill:#fff;
     }
 }
-//highlight Alt Button
+//Highlight Alt Button
 //---------------------------------------
 button.btn-highlight-alt,
 .button.btn-highlight-alt,
@@ -198,3 +198,137 @@ input[type="button"].btn-highlight-alt:focus {
     }
 }
 
+
+//Positive Button
+//---------------------------------------
+button.btn-positive,
+.button.btn-positive,
+input[type="submit"].btn-positive:hover,
+input[type="reset"].btn-positive:hover,
+input[type="button"].btn-positive:hover, {
+    background-color:$btn-positive-color;
+    color:#fff;
+    border-color:$btn-positive-color;
+    .svgicon {
+        fill:#fff;
+    }
+} 
+
+.button.btn-positive:hover,
+button.btn-positive:hover,
+input[type="submit"].btn-positive:hover,
+input[type="reset"].btn-positive:hover,
+input[type="button"].btn-positive:hover,
+.button.btn-positive:focus,
+button.btn-positive:focus,
+input[type="submit"].btn-positive:focus,
+input[type="reset"].btn-positive:focus,
+input[type="button"].btn-positive:focus {
+    background-color:$btn-positive-color-hover;
+    color:#fff;
+    border-color:$btn-positive-color-hover;
+    outline:none;
+    .svgicon {
+        fill:#fff;
+    }
+}
+//Positive Alt Button
+//---------------------------------------
+button.btn-positive-alt,
+.button.btn-positive-alt,
+input[type="submit"].btn-positive-alt:hover,
+input[type="reset"].btn-positive-alt:hover,
+input[type="button"].btn-positive-alt:hover, {
+    background-color:transparent;
+    color:$btn-positive-color;
+    border-color:$btn-positive-color;
+    .svgicon {
+        fill:$btn-positive-color;
+    }
+} 
+
+.button.btn-positive-alt:hover,
+button.btn-positive-alt:hover,
+input[type="submit"].btn-positive-alt:hover,
+input[type="reset"].btn-positive-alt:hover,
+input[type="button"].btn-positive-alt:hover,
+.button.btn-positive-alt:focus,
+button.btn-positive-alt:focus,
+input[type="submit"].btn-positive-alt:focus,
+input[type="reset"].btn-positive-alt:focus,
+input[type="button"].btn-positive-alt:focus {
+    background-color:transparent;
+    color:$btn-positive-color-hover;
+    border-color:$btn-positive-color-hover;
+    outline:none;
+    .svgicon {
+        fill:$btn-positive-color;
+    }
+}
+
+//negative Button
+//---------------------------------------
+button.btn-negative,
+.button.btn-negative,
+input[type="submit"].btn-negative:hover,
+input[type="reset"].btn-negative:hover,
+input[type="button"].btn-negative:hover, {
+    background-color:$btn-negative-color;
+    color:#fff;
+    border-color:$btn-negative-color;
+    .svgicon {
+        fill:#fff;
+    }
+} 
+
+.button.btn-negative:hover,
+button.btn-negative:hover,
+input[type="submit"].btn-negative:hover,
+input[type="reset"].btn-negative:hover,
+input[type="button"].btn-negative:hover,
+.button.btn-negative:focus,
+button.btn-negative:focus,
+input[type="submit"].btn-negative:focus,
+input[type="reset"].btn-negative:focus,
+input[type="button"].btn-negative:focus {
+    background-color:$btn-negative-color-hover;
+    color:#fff;
+    border-color:$btn-negative-color-hover;
+    outline:none;
+    .svgicon {
+        fill:#fff;
+    }
+}
+//negative Alt Button
+//---------------------------------------
+button.btn-negative-alt,
+.button.btn-negative-alt,
+input[type="submit"].btn-negative-alt:hover,
+input[type="reset"].btn-negative-alt:hover,
+input[type="button"].btn-negative-alt:hover, {
+    background-color:transparent;
+    color:$btn-negative-color;
+    border-color:$btn-negative-color;
+    .svgicon {
+        fill:$btn-negative-color;
+    }
+} 
+
+.button.btn-negative-alt:hover,
+button.btn-negative-alt:hover,
+input[type="submit"].btn-negative-alt:hover,
+input[type="reset"].btn-negative-alt:hover,
+input[type="button"].btn-negative-alt:hover,
+.button.btn-negative-alt:focus,
+button.btn-negative-alt:focus,
+input[type="submit"].btn-negative-alt:focus,
+input[type="reset"].btn-negative-alt:focus,
+input[type="button"].btn-negative-alt:focus {
+    background-color:transparent;
+    color:$btn-negative-color-hover;
+    border-color:$btn-negative-color-hover;
+    outline:none;
+    .svgicon {
+        fill:$btn-negative-color;
+    }
+}

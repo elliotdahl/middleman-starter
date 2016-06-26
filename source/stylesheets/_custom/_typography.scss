@@ -7,7 +7,7 @@ body {
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.5;
     font-weight: 400;
-    color: #222;
+    color: $blue-grey-900;
 }
 /* Font Family
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -28,96 +28,106 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: 2rem;
-    font-weight: 300;
+    margin-bottom: ($spacing-base*2);
+    font-weight: 400;
+    line-height: 1;
+    color: $blue-grey-800;
 }
 
 h1 {
-    font-size: 4.0rem;
-    line-height: 1.2;
+    font-size: ($spacing-base*5);
     letter-spacing: -.1rem;
 }
 
 h2 {
-    font-size: 3.6rem;
-    line-height: 1.25;
+    font-size: ($spacing-base*4);
     letter-spacing: -.1rem;
 }
 
 h3 {
-    font-size: 3.0rem;
-    line-height: 1.3;
+    font-size: ($spacing-base*3);
     letter-spacing: -.1rem;
 }
 
 h4 {
-    font-size: 2.4rem;
-    line-height: 1.35;
+    font-size: 20px;
     letter-spacing: -.08rem;
 }
 
 h5 {
-    font-size: 1.8rem;
-    line-height: 1.5;
+    font-size: 18px;
     letter-spacing: -.05rem;
 }
 
 h6 {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 13px;
     letter-spacing: 0;
 }
 
 
-/* Larger than phablet */
+// /* Larger than phablet */
 
-@media (min-width: 550px) {
-    h1 {
-        font-size: 5.0rem;
-    }
-    h2 {
-        font-size: 4.2rem;
-    }
-    h3 {
-        font-size: 3.6rem;
-    }
-    h4 {
-        font-size: 3.0rem;
-    }
-    h5 {
-        font-size: 2.4rem;
-    }
-    h6 {
-        font-size: 1.5rem;
-    }
-}
+// @media (min-width: 550px) {
+//     h1 {
+//         font-size: 5.0rem;
+//     }
+//     h2 {
+//         font-size: 4.2rem;
+//     }
+//     h3 {
+//         font-size: 3.6rem;
+//     }
+//     h4 {
+//         font-size: 3.0rem;
+//     }
+//     h5 {
+//         font-size: 2.4rem;
+//     }
+//     h6 {
+//         font-size: 1.5rem;
+//     }
+// }
 
 
-//Mobile Sizes
-@media (max-width: 550px) {
-    h1 {
-        font-size: 2.8rem;
-    }
-    h2 {
-        font-size: 4.2rem;
-    }
-    h3 {
-        font-size: 3.6rem;
-    }
-    h4 {
-        font-size: 3.0rem;
-    }
-    h5 {
-        font-size: 2.4rem;
-    }
-    h6 {
-        font-size: 1.5rem;
-    }
-}
+// //Mobile Sizes
+// @media (max-width: 550px) {
+//     h1 {
+//         font-size: 2.8rem;
+//     }
+//     h2 {
+//         font-size: 4.2rem;
+//     }
+//     h3 {
+//         font-size: 3.6rem;
+//     }
+//     h4 {
+//         font-size: 3.0rem;
+//     }
+//     h5 {
+//         font-size: 2.4rem;
+//     }
+//     h6 {
+//         font-size: 1.5rem;
+//     }
+// }
 
 p {
     margin-top: 0;
+    margin-bottom:($spacing-base*2)
 }
+/* Sizes
+-------------------------------------------*/
+.type-sm {
+    font-size:12px;
+}
+.type-default {
+    font-size:14px;
+}
+.type-lg {
+    font-size:16px;
+}
+
+
 /* Alignment
 -------------------------------------------*/
 .txt-c {
