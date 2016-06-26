@@ -16,8 +16,6 @@ title: Styleguide
         .col-xs-12
           %button.btn-default Button
           %button.btn-default-alt Alt Button
-          %button.btn-default.disabled Button
-          %button.btn-default-alt.disabled Alt Button
           
       .row.no-gutter.mvxl
         .col-xs-12
@@ -81,9 +79,31 @@ title: Styleguide
         .col-xs-12
           %button.btn-default.btn-sm 
             %div small
-          %button.btn-default default
+          %button.btn-default> default
           %button.btn-default.btn-lg 
             %div large
+      %h3 Button Groups
+
+      .row.no-gutter.mvxl
+        .col-xs-12
+          %p Ensure button elements have no space between them (>)
+          .btn-group
+            %button.btn-default yes
+            %button.btn-default> maybe
+            %button.btn-default no
+      .row.no-gutter.mvxl
+        .col-xs-12
+          .btn-group
+            %button.btn-default-alt.btn-icon
+              .svgicon
+                =partial 'images/svg-lib/ic_add_48px.svg'
+            %button.btn-default-alt.btn-icon>
+              .svgicon
+                =partial 'images/svg-lib/ic_clear_48px.svg'
+            %button.btn-default-alt.btn-icon
+              .svgicon
+                =partial 'images/svg-lib/ic_search_48px.svg'
+          
   %section.mdl-color--orange-500
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Forms

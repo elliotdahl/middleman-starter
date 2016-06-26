@@ -6,7 +6,9 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+    z-index: 0;
     display: inline-flex;
+    position:relative;
     height: ($spacing-base*4);
     padding: 0 ($spacing-base*3);
     vertical-align: middle;
@@ -14,53 +16,55 @@ input[type="button"] {
     text-align: center;
     font-size: 14px;
     font-weight: 600;
-
     line-height: 28px; //32px - 4px borders
     letter-spacing: .05rem;
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border-radius: 2px;
+    border-radius: $btn-radius;
     border: 2px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
+    
     .svgicon {
-        font-size:18px;
-        padding:2px;
+        font-size: 18px;
+        padding: 2px;
     }
 }
+
 .btn-icon {
-    padding:0 5px;
+    padding: 0 3px;
 }
+
 .btn-lg {
-	height: ($spacing-base*5);	
-	line-height: 36px; //40px - 4px borders
-    font-size:16px;
+    height: ($spacing-base*5);
+    line-height: 36px; //40px - 4px borders
+    font-size: 16px;
     &.btn-icon {
-        padding:0 8px;
+        padding: 0 6px;
     }
     .svgicon {
-        font-size:20px;
-
+        font-size: 20px;
     }
 }
+
 .btn-sm {
-	height: ($spacing-base*3);	
-	line-height: 20px; //24px - 4px borders
-	font-size:12px;
+    height: ($spacing-base*3);
+    line-height: 20px; //24px - 4px borders
+    font-size: 12px;
     &.btn-icon {
-        padding:0 2px;
+        padding: 0;
     }
     .svgicon {
-        font-size:16px;
-
+        font-size: 16px;
     }
 }
+
 button.disabled,
 .button.disabled {
-    opacity:.5;
-    cursor:default;
+    opacity: .5;
+    cursor: default;
     pointer-events: none;
 }
 
@@ -70,14 +74,15 @@ button.btn-default,
 .button.btn-default,
 input[type="submit"].btn-default:hover,
 input[type="reset"].btn-default:hover,
-input[type="button"].btn-default:hover, {
-    background-color:$btn-default-color;
-    color:#fff;
-    border-color:$btn-default-color;
+input[type="button"].btn-default:hover,
+{
+    background-color: $btn-default-color;
+    color: #fff;
+    border-color: $btn-default-color;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
-} 
+}
 
 .button.btn-default:hover,
 button.btn-default:hover,
@@ -89,28 +94,30 @@ button.btn-default:focus,
 input[type="submit"].btn-default:focus,
 input[type="reset"].btn-default:focus,
 input[type="button"].btn-default:focus {
-    background-color:$btn-default-color-hover;
-    color:#fff;
-    border-color:$btn-default-color-hover;
-    outline:none;
+    background-color: $btn-default-color-hover;
+    color: #fff;
+    border-color: $btn-default-color-hover;
+    outline: none;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
 }
+
 //Default Alt Button
 //---------------------------------------
 button.btn-default-alt,
 .button.btn-default-alt,
 input[type="submit"].btn-default-alt:hover,
 input[type="reset"].btn-default-alt:hover,
-input[type="button"].btn-default-alt:hover, {
-    background-color:transparent;
-    color:$btn-default-color;
-    border-color:$btn-default-color;
+input[type="button"].btn-default-alt:hover,
+{
+    background-color: transparent;
+    color: $btn-default-color;
+    border-color: $btn-default-color;
     .svgicon {
-        fill:$btn-default-color;
+        fill: $btn-default-color;
     }
-} 
+}
 
 .button.btn-default-alt:hover,
 button.btn-default-alt:hover,
@@ -122,12 +129,12 @@ button.btn-default-alt:focus,
 input[type="submit"].btn-default-alt:focus,
 input[type="reset"].btn-default-alt:focus,
 input[type="button"].btn-default-alt:focus {
-    background-color:transparent;
-    color:$btn-default-color-hover;
-    border-color:$btn-default-color-hover;
-    outline:none;
+    background-color: transparent;
+    color: $btn-default-color-hover;
+    border-color: $btn-default-color-hover;
+    outline: none;
     .svgicon {
-        fill:$btn-default-color-hover;
+        fill: $btn-default-color-hover;
     }
 }
 
@@ -137,14 +144,15 @@ button.btn-highlight,
 .button.btn-highlight,
 input[type="submit"].btn-highlight:hover,
 input[type="reset"].btn-highlight:hover,
-input[type="button"].btn-highlight:hover, {
-    background-color:$btn-highlight-color;
-    color:#fff;
-    border-color:$btn-highlight-color;
+input[type="button"].btn-highlight:hover,
+{
+    background-color: $btn-highlight-color;
+    color: #fff;
+    border-color: $btn-highlight-color;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
-} 
+}
 
 .button.btn-highlight:hover,
 button.btn-highlight:hover,
@@ -156,28 +164,30 @@ button.btn-highlight:focus,
 input[type="submit"].btn-highlight:focus,
 input[type="reset"].btn-highlight:focus,
 input[type="button"].btn-highlight:focus {
-    background-color:$btn-highlight-color-hover;
-    color:#fff;
-    border-color:$btn-highlight-color-hover;
-    outline:none;
+    background-color: $btn-highlight-color-hover;
+    color: #fff;
+    border-color: $btn-highlight-color-hover;
+    outline: none;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
 }
+
 //Highlight Alt Button
 //---------------------------------------
 button.btn-highlight-alt,
 .button.btn-highlight-alt,
 input[type="submit"].btn-highlight-alt:hover,
 input[type="reset"].btn-highlight-alt:hover,
-input[type="button"].btn-highlight-alt:hover, {
-    background-color:transparent;
-    color:$btn-highlight-color;
-    border-color:$btn-highlight-color;
+input[type="button"].btn-highlight-alt:hover,
+{
+    background-color: transparent;
+    color: $btn-highlight-color;
+    border-color: $btn-highlight-color;
     .svgicon {
-        fill:$btn-highlight-color;
+        fill: $btn-highlight-color;
     }
-} 
+}
 
 .button.btn-highlight-alt:hover,
 button.btn-highlight-alt:hover,
@@ -189,15 +199,14 @@ button.btn-highlight-alt:focus,
 input[type="submit"].btn-highlight-alt:focus,
 input[type="reset"].btn-highlight-alt:focus,
 input[type="button"].btn-highlight-alt:focus {
-    background-color:transparent;
-    color:$btn-highlight-color-hover;
-    border-color:$btn-highlight-color-hover;
-    outline:none;
+    background-color: transparent;
+    color: $btn-highlight-color-hover;
+    border-color: $btn-highlight-color-hover;
+    outline: none;
     .svgicon {
-        fill:$btn-highlight-color;
+        fill: $btn-highlight-color;
     }
 }
-
 
 //Positive Button
 //---------------------------------------
@@ -205,14 +214,15 @@ button.btn-positive,
 .button.btn-positive,
 input[type="submit"].btn-positive:hover,
 input[type="reset"].btn-positive:hover,
-input[type="button"].btn-positive:hover, {
-    background-color:$btn-positive-color;
-    color:#fff;
-    border-color:$btn-positive-color;
+input[type="button"].btn-positive:hover,
+{
+    background-color: $btn-positive-color;
+    color: #fff;
+    border-color: $btn-positive-color;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
-} 
+}
 
 .button.btn-positive:hover,
 button.btn-positive:hover,
@@ -224,28 +234,30 @@ button.btn-positive:focus,
 input[type="submit"].btn-positive:focus,
 input[type="reset"].btn-positive:focus,
 input[type="button"].btn-positive:focus {
-    background-color:$btn-positive-color-hover;
-    color:#fff;
-    border-color:$btn-positive-color-hover;
-    outline:none;
+    background-color: $btn-positive-color-hover;
+    color: #fff;
+    border-color: $btn-positive-color-hover;
+    outline: none;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
 }
+
 //Positive Alt Button
 //---------------------------------------
 button.btn-positive-alt,
 .button.btn-positive-alt,
 input[type="submit"].btn-positive-alt:hover,
 input[type="reset"].btn-positive-alt:hover,
-input[type="button"].btn-positive-alt:hover, {
-    background-color:transparent;
-    color:$btn-positive-color;
-    border-color:$btn-positive-color;
+input[type="button"].btn-positive-alt:hover,
+{
+    background-color: transparent;
+    color: $btn-positive-color;
+    border-color: $btn-positive-color;
     .svgicon {
-        fill:$btn-positive-color;
+        fill: $btn-positive-color;
     }
-} 
+}
 
 .button.btn-positive-alt:hover,
 button.btn-positive-alt:hover,
@@ -257,12 +269,12 @@ button.btn-positive-alt:focus,
 input[type="submit"].btn-positive-alt:focus,
 input[type="reset"].btn-positive-alt:focus,
 input[type="button"].btn-positive-alt:focus {
-    background-color:transparent;
-    color:$btn-positive-color-hover;
-    border-color:$btn-positive-color-hover;
-    outline:none;
+    background-color: transparent;
+    color: $btn-positive-color-hover;
+    border-color: $btn-positive-color-hover;
+    outline: none;
     .svgicon {
-        fill:$btn-positive-color;
+        fill: $btn-positive-color;
     }
 }
 
@@ -272,14 +284,15 @@ button.btn-negative,
 .button.btn-negative,
 input[type="submit"].btn-negative:hover,
 input[type="reset"].btn-negative:hover,
-input[type="button"].btn-negative:hover, {
-    background-color:$btn-negative-color;
-    color:#fff;
-    border-color:$btn-negative-color;
+input[type="button"].btn-negative:hover,
+{
+    background-color: $btn-negative-color;
+    color: #fff;
+    border-color: $btn-negative-color;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
-} 
+}
 
 .button.btn-negative:hover,
 button.btn-negative:hover,
@@ -291,28 +304,30 @@ button.btn-negative:focus,
 input[type="submit"].btn-negative:focus,
 input[type="reset"].btn-negative:focus,
 input[type="button"].btn-negative:focus {
-    background-color:$btn-negative-color-hover;
-    color:#fff;
-    border-color:$btn-negative-color-hover;
-    outline:none;
+    background-color: $btn-negative-color-hover;
+    color: #fff;
+    border-color: $btn-negative-color-hover;
+    outline: none;
     .svgicon {
-        fill:#fff;
+        fill: #fff;
     }
 }
+
 //negative Alt Button
 //---------------------------------------
 button.btn-negative-alt,
 .button.btn-negative-alt,
 input[type="submit"].btn-negative-alt:hover,
 input[type="reset"].btn-negative-alt:hover,
-input[type="button"].btn-negative-alt:hover, {
-    background-color:transparent;
-    color:$btn-negative-color;
-    border-color:$btn-negative-color;
+input[type="button"].btn-negative-alt:hover,
+{
+    background-color: transparent;
+    color: $btn-negative-color;
+    border-color: $btn-negative-color;
     .svgicon {
-        fill:$btn-negative-color;
+        fill: $btn-negative-color;
     }
-} 
+}
 
 .button.btn-negative-alt:hover,
 button.btn-negative-alt:hover,
@@ -324,11 +339,51 @@ button.btn-negative-alt:focus,
 input[type="submit"].btn-negative-alt:focus,
 input[type="reset"].btn-negative-alt:focus,
 input[type="button"].btn-negative-alt:focus {
-    background-color:transparent;
-    color:$btn-negative-color-hover;
-    border-color:$btn-negative-color-hover;
-    outline:none;
+    background-color: transparent;
+    color: $btn-negative-color-hover;
+    border-color: $btn-negative-color-hover;
+    outline: none;
     .svgicon {
-        fill:$btn-negative-color;
+        fill: $btn-negative-color;
+    }
+}
+
+//Button Groups
+//---------------------------------------
+.btn-group {
+
+        .button:hover,
+        button:hover {
+            z-index: 2;
+        }
+    
+    .button+ .button,
+    button+ button {
+        margin-left: -2px;
+    }
+    //Middle Btn
+    // .button:first-child:not(:last-child):not(.dropdown-toggle),
+    // button:first-child:not(:last-child):not(.dropdown-toggle) {
+    //     border-radius:0;
+    // }
+    .button:not(:first-child):not(:last-child):not(.dropdown-toggle),
+    button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+        border-radius:0;
+    }
+    //First Btn
+    .button:first-child, button:first-child {
+        border-bottom-left-radius: $btn-radius;
+        border-top-left-radius: $btn-radius;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+    //Last Btn
+    .button:last-child:not(:first-child),
+    button:last-child:not(:first-child),
+    .dropdown-toggle:not(:first-child) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $btn-radius;
+        border-top-right-radius: $btn-radius;
     }
 }

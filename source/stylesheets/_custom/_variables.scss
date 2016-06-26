@@ -80,7 +80,7 @@ $input-disabled:$blue-grey-50;
 //---------------------------------------------
 //default
 $btn-default-color:$blue-grey-500;
-$btn-default-color-hover:$blue-grey-600;
+$btn-default-color-hover:$blue-grey-700;
 //hightlight
 $btn-highlight-color:$mdl-color-blue-500;
 $btn-highlight-color-hover:$mdl-color-blue-600;
@@ -90,6 +90,9 @@ $btn-positive-color-hover:$mdl-color-green-600;
 //negative
 $btn-negative-color:$mdl-color-red-500;
 $btn-negative-color-hover:$mdl-color-red-600;
+
+//Button Radius
+$btn-radius:2px;
 
 //Box Shadows
 //---------------------------------------------
