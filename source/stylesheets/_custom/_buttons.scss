@@ -8,7 +8,7 @@ input[type="reset"],
 input[type="button"] {
     z-index: 0;
     display: inline-flex;
-    position:relative;
+    position: relative;
     height: ($spacing-base*4);
     padding: 0 ($spacing-base*3);
     vertical-align: middle;
@@ -26,7 +26,11 @@ input[type="button"] {
     border: 2px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
-    
+    //Transitions
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    -webkit-transition-property: background-color, color, opacity;
+    transition-property: background-color, color, opacity;
     .svgicon {
         font-size: 18px;
         padding: 2px;
@@ -135,6 +139,41 @@ input[type="button"].btn-default-alt:focus {
     outline: none;
     .svgicon {
         fill: $btn-default-color-hover;
+    }
+}
+
+//Default Alt Button WHITE
+//---------------------------------------
+button.btn-default-alt-wh,
+.button.btn-default-alt-wh,
+input[type="submit"].btn-default-alt-wh:hover,
+input[type="reset"].btn-default-alt-wh:hover,
+input[type="button"].btn-default-alt-wh:hover,
+{
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    .svgicon {
+        fill: #fff;
+    }
+}
+
+.button.btn-default-alt-wh:hover,
+button.btn-default-alt-wh:hover,
+input[type="submit"].btn-default-alt-wh:hover,
+input[type="reset"].btn-default-alt-wh:hover,
+input[type="button"].btn-default-alt-wh:hover,
+.button.btn-default-alt-wh:focus,
+button.btn-default-alt-wh:focus,
+input[type="submit"].btn-default-alt-wh:focus,
+input[type="reset"].btn-default-alt-wh:focus,
+input[type="button"].btn-default-alt-wh:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-color: #fff;
+    outline: none;
+    .svgicon {
+        fill: #fff;
     }
 }
 
@@ -351,12 +390,10 @@ input[type="button"].btn-negative-alt:focus {
 //Button Groups
 //---------------------------------------
 .btn-group {
-
-        .button:hover,
-        button:hover {
-            z-index: 2;
-        }
-    
+    .button:hover,
+    button:hover {
+        z-index: 2;
+    }
     .button+ .button,
     button+ button {
         margin-left: -2px;
@@ -368,10 +405,11 @@ input[type="button"].btn-negative-alt:focus {
     // }
     .button:not(:first-child):not(:last-child):not(.dropdown-toggle),
     button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-        border-radius:0;
+        border-radius: 0;
     }
     //First Btn
-    .button:first-child, button:first-child {
+    .button:first-child,
+    button:first-child {
         border-bottom-left-radius: $btn-radius;
         border-top-left-radius: $btn-radius;
         border-bottom-right-radius: 0;
