@@ -98,4 +98,15 @@ $table-border-color:rgba(0, 0, 0, .12);
             border: none;
         }
     }
+    //Table Row Collapse
+    &.table-lg-row {
+        @media only screen and (max-width: 750px) {
+            .tr:hover {
+                background-color: transparent;
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+        }
+    }
 }

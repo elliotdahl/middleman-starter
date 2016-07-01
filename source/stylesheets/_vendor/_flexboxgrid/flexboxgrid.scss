@@ -507,9 +507,9 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 480px) {
     .container {
-        width: 46rem;
+        width: 460px;
     }
     .col-sm {
         -webkit-flex-grow: 1;
@@ -834,9 +834,9 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 620px) {
     .container {
-        width: 61rem;
+        width: 610px;
     }
     .col-md {
         -webkit-flex-grow: 1;
@@ -1161,9 +1161,9 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 750px) {
     .container {
-        width: 71rem;
+        width: 710px;
     }
     .col-lg {
         -webkit-flex-grow: 1;
