@@ -242,8 +242,8 @@ title: Styleguide
             Cell 4
           .td.col-xs-8
             Cell 5
-      %p No borders on anything
-      .table.table-no-borders.no-hover
+      %p No borders on anything. Individual cell highlights.
+      .table.table-no-borders.td-hover
         .th.row.no-gutter
           .td.col-xs-2
             Header 1
@@ -277,6 +277,35 @@ title: Styleguide
             Cell 4
           .td.col-xs-8
             Cell 5
+      %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
+      .table
+        .th.row.no-gutter
+          .td.col-xs-2
+            Header 1
+          .td.col-xs-2
+            Header 2
+          .td.col-xs-4
+            Header 3
+          .td.col-xs-8
+            Header 4
+          .td.col-xs-8
+            Header 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3 
+          .td.col-xs-8
+            Cell 4
+          %a.td.col-xs-8{:href => "#", :title => "Everyone Can Read It"}
+            Cell 5
+        %a.tr.row.no-gutter{:href => "#", :title => "Everyone Can Read It"}
+          
+          .td.col-xs-24
+            Cell 24
+        
 
 
   %section#grid
