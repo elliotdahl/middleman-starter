@@ -41,22 +41,23 @@ h6 {
 }
 
 h1 {
-    font-size: ($spacing-base*5);
+    font-size: 64px;
     letter-spacing: -.1rem;
+    font-weight: 300;
 }
 
 h2 {
-    font-size: ($spacing-base*4);
+    font-size: 48px;
     letter-spacing: -.1rem;
 }
 
 h3 {
-    font-size: ($spacing-base*3);
+    font-size: 32px;
     letter-spacing: -.1rem;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: -.08rem;
 }
 
@@ -118,6 +119,7 @@ h6 {
 // }
 
 p {
+    font-size:14px;
     margin-top: 0;
     margin-bottom:($spacing-base*2)
 }

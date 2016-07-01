@@ -32,13 +32,13 @@ title: Styleguide
         .col-xs-12
           %button.btn-negative Negative
           %button.btn-negative-alt Negative Alt
-      %h3 Disabled
+      %h4 Disabled
       
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.disabled Button
           %button.btn-default-alt.disabled Alt Button
-      %h3 Icon Buttons
+      %h4 Icon Buttons
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.btn-lg
@@ -79,7 +79,7 @@ title: Styleguide
           %button.btn-default.btn-icon.btn-sm
             %i.material-icons{:style => "font-size:14px;"} add
           
-      %h3 Sizes
+      %h4 Sizes
       .row.no-gutter.mvxl
         .col-xs-12
           %button.btn-default.btn-sm 
@@ -87,7 +87,7 @@ title: Styleguide
           %button.btn-default default
           %button.btn-default.btn-lg 
             %div large
-      %h3 Button Groups
+      %h4 Button Groups
 
       .row.no-gutter.mvxl
         .col-xs-12
@@ -145,8 +145,8 @@ title: Styleguide
   %section#table
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Tables
-
-      .table
+      %p This table has .box-shadow-key-1, .no-gutter on the rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+      .table.box-shadow-key-1
         .th.row.no-gutter
           .td.col-xs-2
             Header 1
@@ -168,24 +168,115 @@ title: Styleguide
             %div Cell 2.2
           .td.col-xs-4.vert-top
             Cell 3 (.vert-top)
+          .td.col-xs-8.vert-bottom
+            Cell 4 (.vert-bottom)
+          .td.col-xs-8
+            Cell 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            %div Cell 2
+            %div Cell 2.2
+          .td.col-xs-4
+            .type-ellipsis
+              Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+          .td.col-xs-16
+            Cell 4 + 5
+      %p This table has now box-shadow or hovers. The .no-hover class can be applied to the entire table or a specific row.
+      .table.no-hover
+        .th.row.no-gutter
+          .td.col-xs-2
+            Header 1
+          .td.col-xs-2
+            Header 2
+          .td.col-xs-4
+            Header 3
+          .td.col-xs-8
+            Header 4
+          .td.col-xs-8
+            Header 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3 
+          .td.col-xs-8
+            Cell 4
+          .td.col-xs-8
+            Cell 5
+      %p No side borders to cells using class .tr-no-h-borders on the .tr or the .table. Use .th-no-h-borders on the .th.
+      .table.tr-no-h-borders
+        .th.row.no-gutter
+          .td.col-xs-2
+            Header 1
+          .td.col-xs-2
+            Header 2
+          .td.col-xs-4
+            Header 3
+          .td.col-xs-8
+            Header 4
+          .td.col-xs-8
+            Header 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3 
           .td.col-xs-8
             Cell 4
           .td.col-xs-8
             Cell 5
         .tr.row.no-gutter
           .td.col-xs-2
-            .type-ellipsis
-              HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+            Cell 1
           .td.col-xs-2
-            %div Cell 2
-            %div Cell 2.2
+            Cell 2
           .td.col-xs-4
-            Cell 3
-          .td.col-xs-16
-            Cell 4 + 5
-          
-
-
+            Cell 3 
+          .td.col-xs-8
+            Cell 4
+          .td.col-xs-8
+            Cell 5
+      %p No borders on anything
+      .table.table-no-borders.no-hover
+        .th.row.no-gutter
+          .td.col-xs-2
+            Header 1
+          .td.col-xs-2
+            Header 2
+          .td.col-xs-4
+            Header 3
+          .td.col-xs-8
+            Header 4
+          .td.col-xs-8
+            Header 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3 
+          .td.col-xs-8
+            Cell 4
+          .td.col-xs-8
+            Cell 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            Cell 1
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3 
+          .td.col-xs-8
+            Cell 4
+          .td.col-xs-8
+            Cell 5
 
 
   %section#grid
@@ -211,14 +302,14 @@ title: Styleguide
           G 1
         .col-xs-9.mdl-color--purple-600
           G 9
-      %h3 Offset
+      %h4 Offset
       .row.no-gutter.mvxl
         .col-xs-8.mdl-color--purple-600
           G 8 + offset 8
         .col-xs-offset-8.mdl-color--deep-purple-600
         .col-xs-8.mdl-color--deep-purple-600
           G 8
-      %h3 Small
+      %h4 Small
       .row.no-gutter.mvxl
         .col-sm-1.mdl-color--deep-purple-600
           G 1 SM
@@ -236,7 +327,7 @@ title: Styleguide
           G 1
         .col-sm-9.mdl-color--purple-600
           G 9
-      %h3 Medium
+      %h4 Medium
       .row.no-gutter.mvxl
         .col-md-1.mdl-color--deep-purple-600
           G 1 MD
@@ -254,7 +345,7 @@ title: Styleguide
           G 1
         .col-md-9.mdl-color--purple-600
           G 9
-      %h3 Large
+      %h4 Large
       .row.no-gutter.mvxl
         .col-lg-1.mdl-color--deep-purple-600
           G 1 LG
@@ -349,10 +440,10 @@ title: Styleguide
       %h1 Typography
       .row.no-gutter.phxl
         .col-xs-12.phxl
-          %h1 H1 (base)*5 = 40px
-          %h2 H2 (base)*4 = 32px
-          %h3 H3 (base)*3 = 40px
-          %h4 H4 20px
+          %h1 H1 64px
+          %h2 H2 48px
+          %h3 H3 32px
+          %h4 H4 24px
           %h5 H5 18px
           %h6 H6 13px
           %p Paragraph Tag
