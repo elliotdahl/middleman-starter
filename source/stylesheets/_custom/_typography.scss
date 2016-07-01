@@ -132,8 +132,12 @@ p {
 .type-lg {
     font-size:16px;
 }
-
-
+//Ellipsis
+.type-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
 /* Alignment
 -------------------------------------------*/
 .txt-c {

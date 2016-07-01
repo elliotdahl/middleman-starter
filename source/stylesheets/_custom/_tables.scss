@@ -1,0 +1,27 @@
+.table {
+    background-color: yellow;
+    //Table Row Header
+    .th {
+    	font-size:12px;
+    	font-weight: 600;
+    	text-transform:uppercase;
+        .td {
+            border-bottom: solid 2px black;
+        }
+    }
+    //Table Row
+    .tr {
+        &:last-child .td {
+            border-bottom: solid 1px black;
+        }
+    }
+    //Table Cell
+    .td {
+        border-left: solid 1px black;
+        border-top: solid 1px black;
+        padding:$spacing-base;
+        &:last-child {
+            border-right: solid 1px black;
+        }
+    }
+}

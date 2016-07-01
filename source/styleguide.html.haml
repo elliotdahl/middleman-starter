@@ -10,7 +10,7 @@ title: Styleguide
       
 
       
-  %section
+  %section#buttons
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Buttons
       
@@ -109,7 +109,7 @@ title: Styleguide
               .svgicon
                 =partial 'images/svg-lib/ic_search_48px.svg'
           
-  %section
+  %section#forms
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Forms
       .row.no-gutter.mvxl
@@ -142,7 +142,49 @@ title: Styleguide
               %label Large
               %input.form-control{:type => "text", :placeholder => "Larger"}
               %button.btn-default.btn-lg Large Btn
-  %section
+  %section#table
+    .section-content.margin-auto.paxl.mdl-color--white
+      %h1 Tables
+
+      .table
+        .th.row.no-gutter
+          .td.col-xs-2
+            Header 1
+          .td.col-xs-2
+            Header 2
+          .td.col-xs-4
+            Header 3
+          .td.col-xs-8
+            Header 4
+          .td.col-xs-8
+            Header 5
+        .tr.row.no-gutter
+          .td.col-xs-2
+            %div Cell 1
+            %div Cell 1.2
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4.vert-middle
+            Cell 3
+          .td.col-xs-8
+            Cell 4
+          .td.col-xs-8
+            Cell 5
+        .tr.row.no-gutter
+          .td.col-xs-2.type-ellipsis
+            HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+          .td.col-xs-2
+            Cell 2
+          .td.col-xs-4
+            Cell 3
+          .td.col-xs-16
+            Cell 4 + 5
+          
+
+
+
+
+  %section#grid
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Grid
       
@@ -228,7 +270,7 @@ title: Styleguide
           G 9
       
       
-  %section
+  %section#icons
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Icons
       
@@ -298,7 +340,7 @@ title: Styleguide
             Add Circle Outline
           %code
             ic_add_circle_outline_48px.svg
-  %section
+  %section#typography
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Typography
       .row.no-gutter.phxl

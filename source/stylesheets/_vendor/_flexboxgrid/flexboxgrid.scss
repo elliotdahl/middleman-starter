@@ -29,6 +29,8 @@
 }
 
 //Flexbox ---------------------------
+
+
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -111,8 +113,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
 }
 
 .col-xs {
@@ -489,8 +491,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
     width: 100%;
 }
 
@@ -816,8 +818,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
     width: 100%;
 }
 
@@ -1143,8 +1145,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
     width: 100%;
 }
 
