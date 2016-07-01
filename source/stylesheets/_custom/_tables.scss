@@ -1,27 +1,45 @@
 .table {
-    background-color: yellow;
+    background-color: $blue-grey-50;
     //Table Row Header
     .th {
-    	font-size:12px;
-    	font-weight: 600;
-    	text-transform:uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
         .td {
-            border-bottom: solid 2px black;
+            border-bottom: solid 1px $blue-grey-200;
+        }
+        &:first-child .td {
+            &:first-child {
+                border-radius: 2px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 2px 0 0;
+            }
         }
     }
     //Table Row
     .tr {
         &:last-child .td {
-            border-bottom: solid 1px black;
+            border-bottom: solid 1px $blue-grey-200;
+            &:first-child {
+                border-radius: 0 0 0 2px;
+            }
+            &:last-child {
+                border-radius: 0 0 2px 0;
+            }
         }
     }
     //Table Cell
     .td {
-        border-left: solid 1px black;
-        border-top: solid 1px black;
-        padding:$spacing-base;
+        border-left: solid 1px $blue-grey-200;
+        border-top: solid 1px $blue-grey-200;
+        padding: $spacing-base;
+        //Vert-middle
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &:last-child {
-            border-right: solid 1px black;
+            border-right: solid 1px $blue-grey-200;
         }
     }
 }

@@ -6,8 +6,14 @@
 .vert-middle {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
 }
+.vert-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
 
 .pos-v-mid {
     position: absolute;
