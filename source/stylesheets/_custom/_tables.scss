@@ -99,14 +99,72 @@ $table-border-color:rgba(0, 0, 0, .12);
         }
     }
     //Table Row Collapse
-    &.table-lg-row {
-        @media only screen and (max-width: 750px) {
-            .tr:hover {
-                background-color: transparent;
+    &.table-sm-row {
+        @media only screen and (max-width: 480px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
             }
             .tr .td:hover {
                 background-color: $grey-50;
             }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
         }
     }
+    &.table-md-row {
+        @media only screen and (max-width: 620px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    &.table-lg-row {
+        @media only screen and (max-width: 750px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    // div[class*="col-lg"] {
+    // }
 }
