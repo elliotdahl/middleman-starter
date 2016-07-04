@@ -36,8 +36,8 @@ title: Styleguide
       
       .row.no-gutter.mvxl
         .col-xs-12
-          %button.btn-default.disabled Button
-          %button.btn-default-alt.disabled Alt Button
+          %button.btn-default.disabled{:disabled => ""} Button
+          %button.btn-default-alt.disabled{:disabled => ""} Alt Button
       %h4 Icon Buttons
       .row.no-gutter.mvxl
         .col-xs-12
@@ -132,8 +132,8 @@ title: Styleguide
           %form
             .form-group.form-inline
               %label Email
-              %input.form-control.disabled{:type => "email", :placeholder => "Enter email"}
-              %button.btn-default.disabled Submit
+              %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
+              %button.btn-default.disabled{:disabled => ""} Submit
 
       .row.no-gutter.mvxl
         .col-xs-12
