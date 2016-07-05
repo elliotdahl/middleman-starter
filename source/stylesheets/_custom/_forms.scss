@@ -20,8 +20,6 @@ select {
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
-    margin-bottom: $spacing-base;
-    margin-right: $spacing-base;
     color: $blue-grey-900;
 }
 
@@ -60,11 +58,6 @@ select:focus {
     outline: 0;
 }
 
-label,
-legend {
-    color: $blue-grey-600;
-}
-
 fieldset {
     padding: 0;
     border-width: 0;
@@ -73,13 +66,18 @@ fieldset {
 input[type="checkbox"],
 input[type="radio"] {
     display: inline;
-    margin-right:2px;
+    margin-right: 2px;
 }
 
-label > .label-body {
-    display: inline-block;
-    margin-left: .5rem;
-    font-weight: normal;
+label,
+legend {
+    
+    color: $blue-grey-600;
+}
+
+.label-hold {
+    height: 32px;
+    content: "";
 }
 
 .form-group-search {
@@ -87,23 +85,26 @@ label > .label-body {
     .svgicon {
         position: absolute;
         top: 50%;
-        left:8px;
+        left: 8px;
         transform: translateY(-50%);
         font-size: 20px;
-        fill:$blue-grey-600;
+        fill: $blue-grey-600;
     }
     input {
-        padding-left:32px;
+        padding-left: 32px;
     }
 }
 
 //Form Groupings
 //-------------------------------------
 .form-group {
+    margin-bottom: $spacing-base;
+    margin-right: $spacing-base;
     label {
         display: block;
         font-weight: 600;
-        margin-bottom: ($spacing-base/2);
+        line-height: ($spacing-base*4);
+        margin-bottom: 0;
         margin-right: $spacing-base;
     }
     input,
@@ -136,9 +137,12 @@ label > .label-body {
 }
 
 .form-inline {
+    // display: inline-block;
     display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
     label {
-        display: inline-flex;
+        // display: inline-flex;
         margin-bottom: 0;
         line-height: ($spacing-base*4);
     }
@@ -154,6 +158,7 @@ label > .label-body {
         margin-bottom: 0;
     }
 }
+
 //Accept & Error (valid/invalid)
 input[type="email"].invalid,
 input[type="number"].invalid,
@@ -165,6 +170,7 @@ input[type="password"].invalid,
 textarea.invalid {
     border: 1px solid $input-border-invalid;
 }
+
 input[type="email"].valid,
 input[type="number"].valid,
 input[type="search"].valid,
@@ -174,4 +180,9 @@ input[type="url"].valid,
 input[type="password"].valid,
 textarea.valid {
     border: 1px solid $input-border-valid;
+}
+
+.invalid-text {
+    font-size: 12px;
+    color: $input-invalid-text;
 }

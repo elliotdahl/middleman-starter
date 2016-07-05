@@ -163,29 +163,51 @@ title: Styleguide
             .form-group
               %label Email
               %input.form-control{:type => "email", :placeholder => "Enter email"}
+            .form-group
               %button.btn-default Submit
-
+      %h4 Row Form (single column)
+      .row.no-gutter.mvxl
+        
+        
+        .col-xs-24
+          .form-group.left
+            %label Email
+            %input.form-control{:type => "email", :placeholder => "Email"}
+        
+          .form-group.left
+            %label Password
+            %input.form-control{:type => "password", :placeholder => "Password"}
+        
+          .form-group.left
+            .label-hold
+            %button.btn-default Submit
+      %h4 Inline Single Row
       .row.no-gutter.mvxl
         .col-xs-12
           %form
             .form-group.form-inline
               %label Email
+            .form-group.form-inline
               %input.form-control{:type => "email", :placeholder => "Enter email"}
+            .form-group.form-inline
               %button.btn-default Submit
+      %h4 Disabled
       .row.no-gutter.mvxl
         .col-xs-12
           %form
-            .form-group.form-inline
+            .form-group
               %label Email
               %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
+            .form-group
               %button.btn-default.disabled{:disabled => ""} Submit
-
+      %h4 Large
       .row.no-gutter.mvxl
         .col-xs-12
           %form
-            .form-group.form-inline.form-lg
+            .form-group.form-lg
               %label Large
               %input.form-control{:type => "text", :placeholder => "Larger"}
+            .form-group.form-lg
               %button.btn-default.btn-lg Large Btn
       %h4 Select
       .row.no-gutter.mvxl
@@ -225,12 +247,14 @@ title: Styleguide
       .row.no-gutter.mvxl
         .col-xs-24
           %form
-            .form-group
+            .form-group.form-inline
               %input.invalid{:type => "text", :placeholder => "Enter text"}
-              .error-text
+              .invalid-text Error please try again
+            .form-group.form-inline
               %input.valid{:type => "text", :placeholder => "Enter text"}
-              %button.btn-positive Accept
-              %button.btn-negative Error
+              .svgicon
+                =partial 'images/svg-lib/ic_check_circle_48px.svg'
+              
 
   %section#grid
     .section-content.margin-auto.paxl.mdl-color--white
