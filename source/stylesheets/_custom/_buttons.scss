@@ -29,8 +29,8 @@ input[type="button"] {
     //Transitions
     -webkit-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
-    -webkit-transition-property: background-color, color, opacity;
-    transition-property: background-color, color, opacity;
+    -webkit-transition-property: background-color, color, opacity, border;
+    transition-property: background-color, color, opacity, border;
     .svgicon {
         font-size: 18px;
         padding: 2px;
