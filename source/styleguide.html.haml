@@ -187,6 +187,51 @@ title: Styleguide
               %label Large
               %input.form-control{:type => "text", :placeholder => "Larger"}
               %button.btn-default.btn-lg Large Btn
+      %h4 Select
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %form
+            .form-group
+              %select.form-control
+                %option Pivotal
+                %option Google
+                %option Yahoo
+                %option Microsoft-Linkedin
+      %h4 Search
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %form
+            .form-group.form-group-search
+              .svgicon
+                =partial 'images/svg-lib/ic_search_48px.svg'
+              %input{:type => "search", :placeholder => "Search..."}
+      %h4 Text Area
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %form
+            .form-group
+              %textarea{:placeholder => "Type body here..."}
+      %h4 Radio/Checkbox
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %form
+            .form-group
+              %input{:type => "checkbox"}
+              Remember Me
+            .form-group
+              %input{:type => "radio"}
+              Don't Remember me
+      %h4 Error/Acceptance States
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %form
+            .form-group
+              %input.invalid{:type => "text", :placeholder => "Enter text"}
+              .error-text
+              %input.valid{:type => "text", :placeholder => "Enter text"}
+              %button.btn-positive Accept
+              %button.btn-negative Error
+
   %section#grid
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Grid

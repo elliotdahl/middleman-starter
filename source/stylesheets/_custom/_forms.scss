@@ -12,7 +12,7 @@ textarea,
 select {
     display: block;
     height: ($spacing-base*4);
-    padding: 4px 10px;
+    padding: 4px $spacing-base;
     /* The 6px vertically centers text on FF, ignored by Webkit */
     font-size: 14px;
     background-color: #fff;
@@ -62,7 +62,7 @@ select:focus {
 
 label,
 legend {
-  color: $blue-grey-600;
+    color: $blue-grey-600;
 }
 
 fieldset {
@@ -73,12 +73,28 @@ fieldset {
 input[type="checkbox"],
 input[type="radio"] {
     display: inline;
+    margin-right:2px;
 }
 
 label > .label-body {
     display: inline-block;
     margin-left: .5rem;
     font-weight: normal;
+}
+
+.form-group-search {
+    position: relative;
+    .svgicon {
+        position: absolute;
+        top: 50%;
+        left:8px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        fill:$blue-grey-600;
+    }
+    input {
+        padding-left:32px;
+    }
 }
 
 //Form Groupings
@@ -97,8 +113,8 @@ label > .label-body {
             background-color: $input-disabled;
             cursor: default;
             pointer-events: none;
-            color:$blue-grey-700;
-            border-color:$blue-grey-100;
+            color: $blue-grey-700;
+            border-color: $blue-grey-100;
         }
     }
 }
@@ -137,4 +153,25 @@ label > .label-body {
         display: inline-flex;
         margin-bottom: 0;
     }
+}
+//Accept & Error (valid/invalid)
+input[type="email"].invalid,
+input[type="number"].invalid,
+input[type="search"].invalid,
+input[type="text"].invalid,
+input[type="tel"].invalid,
+input[type="url"].invalid,
+input[type="password"].invalid,
+textarea.invalid {
+    border: 1px solid $input-border-invalid;
+}
+input[type="email"].valid,
+input[type="number"].valid,
+input[type="search"].valid,
+input[type="text"].valid,
+input[type="tel"].valid,
+input[type="url"].valid,
+input[type="password"].valid,
+textarea.valid {
+    border: 1px solid $input-border-valid;
 }
