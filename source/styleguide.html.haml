@@ -32,6 +32,8 @@ title: Styleguide
         .col-xs-12
           %button.btn-negative Negative
           %button.btn-negative-alt Negative Alt
+      
+          
       %h4 Disabled
       
       .row.no-gutter.mvxl
@@ -78,7 +80,50 @@ title: Styleguide
               =partial 'images/svg-lib/ic_add_48px.svg'
           %button.btn-default.btn-icon.btn-sm
             %i.material-icons{:style => "font-size:14px;"} add
-          
+      %h4 Button Loaders
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %button.btn-default.btn-sm
+            Small Load
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-default
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-default.btn-lg
+            Large Load
+            =partial 'images/loading/spinner-sm.svg'
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %button.btn-default
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-default-alt
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %button.btn-highlight
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-highlight-alt
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %button.btn-positive
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-positive-alt
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+      .row.no-gutter.mvxl
+        .col-xs-24
+          %button.btn-negative
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
+          %button.btn-negative-alt
+            Loading
+            =partial 'images/loading/spinner-sm.svg'
       %h4 Sizes
       .row.no-gutter.mvxl
         .col-xs-12
@@ -501,7 +546,17 @@ title: Styleguide
 
 
   
-      
+  %section#loading-spinners
+    .section-content.margin-auto.paxl.mdl-color--white
+      %h1 Loading Spinners
+      .row.no-gutter.mvxl
+        .col-sm-8.txt-c
+          =partial 'images/loading/spinner.svg'
+        .col-sm-8.txt-c
+          =partial 'images/loading/spinner-md.svg'
+        .col-sm-8.txt-c
+          =partial 'images/loading/spinner-sm.svg'
+
   %section#icons
     .section-content.margin-auto.paxl.mdl-color--white
       %h1 Icons

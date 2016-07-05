@@ -35,6 +35,12 @@ input[type="button"] {
         font-size: 18px;
         padding: 2px;
     }
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        margin-left: 8px;
+        margin-top: 6px;
+    }
 }
 
 .btn-icon {
@@ -51,6 +57,13 @@ input[type="button"] {
     .svgicon {
         font-size: 20px;
     }
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        width: 18px;
+        height: 18px;
+        margin-top: 9px;
+    }
 }
 
 .btn-sm {
@@ -62,6 +75,13 @@ input[type="button"] {
     }
     .svgicon {
         font-size: 16px;
+    }
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        width: 12px;
+        height: 12px;
+        margin-top: 4px;
     }
 }
 
@@ -110,6 +130,24 @@ input[type="button"].btn-default:focus:hover {
     background-color: $btn-default-color-hover;
     border-color: $btn-default-color-hover;
     outline: none;
+}
+
+//Spinner
+button.btn-default,
+.button.btn-default,
+input[type="submit"].btn-default,
+input[type="reset"].btn-default,
+input[type="button"].btn-default {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: #fff;
+        }
+        .path {
+            stroke: #fff;
+        }
+    }
 }
 
 //Default Alt Button
@@ -161,6 +199,24 @@ input[type="button"].btn-default-alt:focus:hover {
     }
 }
 
+//Spinner
+button.btn-default-alt,
+.button.btn-default-alt,
+input[type="submit"].btn-default-alt,
+input[type="reset"].btn-default-alt,
+input[type="button"].btn-default-alt {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: $btn-default-color;
+        }
+        .path {
+            stroke: $btn-default-color;
+        }
+    }
+}
+
 //Default Alt Button WHITE
 //---------------------------------------
 button.btn-default-alt-wh,
@@ -209,6 +265,24 @@ input[type="button"].btn-default-alt-wh:focus:hover {
     }
 }
 
+//Spinner
+button.btn-default-alt-wh,
+.button.btn-default-alt-wh,
+input[type="submit"].btn-default-alt-wh,
+input[type="reset"].btn-default-alt-wh,
+input[type="button"].btn-default-alt-wh {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: #fff;
+        }
+        .path {
+            stroke: #fff;
+        }
+    }
+}
+
 //Highlight Button
 //---------------------------------------
 button.btn-highlight,
@@ -247,6 +321,23 @@ input[type="button"].btn-highlight:focus:hover {
     background-color: $btn-highlight-color-hover;
     border-color: $btn-highlight-color-hover;
     outline: none;
+}
+//Spinner
+button.btn-highlight,
+.button.btn-highlight,
+input[type="submit"].btn-highlight,
+input[type="reset"].btn-highlight,
+input[type="button"].btn-highlight {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: #fff;
+        }
+        .path {
+            stroke: #fff;
+        }
+    }
 }
 
 //Highlight Alt Button
@@ -296,6 +387,23 @@ input[type="button"].btn-highlight-alt:focus:hover {
         fill: $btn-highlight-color-hover;
     }
 }
+//Spinner
+button.btn-highlight-alt,
+.button.btn-highlight-alt,
+input[type="submit"].btn-highlight-alt,
+input[type="reset"].btn-highlight-alt,
+input[type="button"].btn-highlight-alt {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: $btn-highlight-color;
+        }
+        .path {
+            stroke: $btn-highlight-color;
+        }
+    }
+}
 
 //Positive Button
 //---------------------------------------
@@ -335,6 +443,23 @@ input[type="button"].btn-positive:focus:hover {
     background-color: $btn-positive-color-hover;
     border-color: $btn-positive-color-hover;
     outline: none;
+}
+
+button.btn-positive,
+.button.btn-positive,
+input[type="submit"].btn-positive,
+input[type="reset"].btn-positive,
+input[type="button"].btn-positive {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: #fff;
+        }
+        .path {
+            stroke: #fff;
+        }
+    }
 }
 
 //Positive Alt Button
@@ -385,6 +510,23 @@ input[type="button"].btn-positive-alt:focus:hover {
     }
 }
 
+button.btn-positive-alt,
+.button.btn-positive-alt,
+input[type="submit"].btn-positive-alt,
+input[type="reset"].btn-positive-alt,
+input[type="button"].btn-positive-alt {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: $btn-positive-color;
+        }
+        .path {
+            stroke: $btn-positive-color;
+        }
+    }
+}
+
 //Negative Button
 //---------------------------------------
 button.btn-negative,
@@ -425,14 +567,30 @@ input[type="button"].btn-negative:focus:hover {
     outline: none;
 }
 
+button.btn-negative,
+.button.btn-negative,
+input[type="submit"].btn-negative,
+input[type="reset"].btn-negative,
+input[type="button"].btn-negative {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: #fff;
+        }
+        .path {
+            stroke: #fff;
+        }
+    }
+}
+
 //negative Alt Button
 //---------------------------------------
 button.btn-negative-alt,
 .button.btn-negative-alt,
 input[type="submit"].btn-negative-alt,
 input[type="reset"].btn-negative-alt,
-input[type="button"].btn-negative-alt
-{
+input[type="button"].btn-negative-alt {
     background-color: transparent;
     color: $btn-negative-color;
     border-color: $btn-negative-color;
@@ -473,6 +631,24 @@ input[type="button"].btn-negative-alt:focus:hover {
         fill: $btn-negative-color-hover;
     }
 }
+
+button.btn-negative-alt,
+.button.btn-negative-alt,
+input[type="submit"].btn-negative-alt,
+input[type="reset"].btn-negative-alt,
+input[type="button"].btn-negative-alt {
+    .spinner,
+    .spinner-md,
+    .spinner-sm {
+        .ring {
+            stroke: $btn-negative-color;
+        }
+        .path {
+            stroke: $btn-negative-color;
+        }
+    }
+}
+
 
 //Button Groups
 //---------------------------------------
