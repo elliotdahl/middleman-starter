@@ -1,19 +1,13 @@
 @charset "utf-8";
 
 ////Variables
-@import "_custom/variables";
+@import "_style/variables";
 
 ////Vendor---------------------------
-	//8px-Foundation
+	//8px-Foundation-Styleguide
 	//-------------------------------
 @import "_vendor/_8px-foundation/_8px-style";
-	//Skeleton
-	//-------------------------------
-@import "_vendor/_skeleton/skeleton";
-	//Flexboxgrid
-	//-------------------------------
-@import "_vendor/_flexboxgrid/flexboxgrid";
-//@import "_vendor/_flexboxgrid/index-example";
+
 	//Google Material (load colors OR all of material)
 	//-------------------------------
 @import "_vendor/_material/colors";
@@ -21,19 +15,20 @@
 
 
 
-////Custom---------------------------
-@import "_custom/box-shadows";
-@import "_custom/buttons";
-@import "_custom/forms";
-@import "_custom/layout";
-@import "_custom/loading-spinner";
-@import "_custom/media-sizes";
-@import "_custom/oo-whitespace";
-@import "_custom/style";
-@import "_custom/svg-library";
-@import "_custom/tables";
-@import "_custom/typography";
-@import "_custom/video";
+////8px-Foundation-Core---------------------------
+@import "_style/box-shadows";
+@import "_style/buttons";
+@import "_style/flexboxgrid";
+@import "_style/forms";
+@import "_style/layout";
+@import "_style/loading-spinner";
+@import "_style/media-sizes";
+@import "_style/oo-whitespace";
+@import "_style/style";
+@import "_style/svg-library";
+@import "_style/tables";
+@import "_style/typography";
+@import "_style/video";
 
 //Normalize
 @import "normalize";
