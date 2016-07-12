@@ -3,715 +3,783 @@ title: Styleguide
 ---
 
 .page.mdl-color--blue-500
-  %section.ptxxl.pbxxxxl.txt-c.styleguide-header
+  %section.ptxl.pbxl.txt-c.styleguide-header
     .section-content.margin-auto.paxl.mdl-color--white
       %h1.txt-c.mbxl.monoton{:style => "font-size:64px;"} The Styleguide
       %a.button.btn-highlight.btn-lg{:href => "https://github.com/edahl9/middleman-starter", :target => "_blank"} Download
-      %p.mtm Version: 0.1
-
-      
-  %section#buttons
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Buttons
-      
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default Button
-          %button.btn-default-alt Alt Button
-          
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-highlight Highlight 
-          %button.btn-highlight-alt Highlight Alt
-
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-positive Positive
-          %button.btn-positive-alt Positive Alt
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-negative Negative
-          %button.btn-negative-alt Negative Alt
-      
-          
-      %h4 Disabled
-      
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default.disabled{:disabled => ""} Button
-          %button.btn-default-alt.disabled{:disabled => ""} Alt Button
-      %h4 Icon Buttons
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default.btn-lg
-
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-            %div large
-          %button.btn-default.btn-lg.btn-icon
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default 
-
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-            default
-          %button.btn-default.btn-icon
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-          %button.btn-default-alt.btn-icon
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-          %button.btn-positive.btn-icon
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-          %button.btn-default.btn-icon
-            %i.material-icons{:style => "font-size:18px;"} add
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default.btn-sm
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-            small
-          %button.btn-default.btn-icon.btn-sm
-            .svgicon
-              =partial 'images/svg-lib/ic_add_48px.svg'
-          %button.btn-default.btn-icon.btn-sm
-            %i.material-icons{:style => "font-size:14px;"} add
-      %h4 Button Loaders
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %button.btn-default.btn-sm
-            Small Load
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-default
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-default.btn-lg
-            Large Load
-            =partial 'images/loading/spinner-sm.svg'
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %button.btn-default
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-default-alt
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %button.btn-highlight
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-highlight-alt
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %button.btn-positive
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-positive-alt
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %button.btn-negative
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-          %button.btn-negative-alt
-            Loading
-            =partial 'images/loading/spinner-sm.svg'
-      %h4 Sizes
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %button.btn-default.btn-sm 
-            %div small
-          %button.btn-default default
-          %button.btn-default.btn-lg 
-            %div large
-      %h4 Button Groups
-
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %p Ensure button elements have no space between them (>)
-          .btn-group
-            %button.btn-default yes
-            %button.btn-default> maybe
-            %button.btn-default no
-      .row.no-gutter.mvxl
-        .col-xs-12
-          .btn-group
-            %button.btn-default-alt.btn-icon
-              .svgicon
-                =partial 'images/svg-lib/ic_add_48px.svg'
-            %button.btn-default-alt.btn-icon>
-              .svgicon
-                =partial 'images/svg-lib/ic_clear_48px.svg'
-            %button.btn-default-alt.btn-icon
-              .svgicon
-                =partial 'images/svg-lib/ic_search_48px.svg'
-          
-  %section#forms
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Forms
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %form
-            .form-group
-              %label Email
-              %input.form-control{:type => "email", :placeholder => "Enter email"}
-            .form-group
-              %button.btn-default Submit
-      %h4 Row Form (single column)
-      .row.no-gutter.mvxl
-        
-        
-        .col-xs-24
-          .form-group.left
-            %label Email
-            %input.form-control{:type => "email", :placeholder => "Email"}
-        
-          .form-group.left
-            %label Password
-            %input.form-control{:type => "password", :placeholder => "Password"}
-        
-          .form-group.left
+      %p.mtm.mbn Version: 0.1
+  .page-container.margin-auto
+    .row
+      .col-md-4
+        %section
+          .section-content.margin-auto.paxl.mdl-color--white
+            %ul.list-unstyled
+              %li 
+                %a{:href => "#buttons"} Buttons
+              %li
+                %a{:href => "#forms"} Forms
+              %li
+                %a{:href => "#grids"} Grid
+              %li
+                %a{:href => "#links"} Links
+              %li
+                %a{:href => "#lists"} Lists
+              %li
+                %a{:href => "#tables"} Tables
+              %li
+                %a{:href => "#loading-spinners"} Loading Spinners
+              %li
+                %a{:href => "#icons"} Icons
+              %li
+                %a{:href => "#typography"} Typography
+      .col-md-20
+        %section#buttons
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Buttons
             
-            %button.btn-default.mtxxxl Submit
-      %h4 Inline Single Row
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %form
-            .form-group.form-inline
-              %label Email
-            .form-group.form-inline
-              %input.form-control{:type => "email", :placeholder => "Enter email"}
-            .form-group.form-inline
-              %button.btn-default Submit
-      %h4 Disabled
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %form
-            .form-group
-              %label Email
-              %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
-            .form-group
-              %button.btn-default.disabled{:disabled => ""} Submit
-      %h4 Large
-      .row.no-gutter.mvxl
-        .col-xs-12
-          %form
-            .form-group.form-lg
-              %label Large
-              %input.form-control{:type => "text", :placeholder => "Larger"}
-            .form-group.form-lg
-              %button.btn-default.btn-lg Large Btn
-      %h4 Select
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %form
-            .form-group
-              %select.form-control
-                %option Pivotal
-                %option Google
-                %option Yahoo
-                %option Microsoft-Linkedin
-      %h4 Search
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %form
-            .form-group.form-group-search
-              .svgicon
-                =partial 'images/svg-lib/ic_search_48px.svg'
-              %input{:type => "search", :placeholder => "Search..."}
-      %h4 Text Area
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %form
-            .form-group
-              %textarea{:placeholder => "Type body here..."}
-      %h4 Radio/Checkbox
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %form
-            .form-group
-              %input{:type => "checkbox"}
-              Remember Me
-            .form-group
-              %input{:type => "radio"}
-              Don't Remember me
-      %h4 Error/Acceptance States
-      .row.no-gutter.mvxl
-        .col-xs-24
-          %form
-            .form-group.form-inline
-              %input.invalid{:type => "text", :placeholder => "Enter text"}
-              .invalid-text Error please try again
-            .form-group.form-inline
-              %input.valid{:type => "text", :placeholder => "Enter text"}
-              .svgicon
-                =partial 'images/svg-lib/ic_check_circle_48px.svg'
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default Button
+                %button.btn-default-alt Alt Button
+                
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-highlight Highlight 
+                %button.btn-highlight-alt Highlight Alt
+
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-positive Positive
+                %button.btn-positive-alt Positive Alt
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-negative Negative
+                %button.btn-negative-alt Negative Alt
+            
+                
+            %h4 Disabled
+            
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default.disabled{:disabled => ""} Button
+                %button.btn-default-alt.disabled{:disabled => ""} Alt Button
+            %h4 Icon Buttons
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default.btn-lg
+
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  %div large
+                %button.btn-default.btn-lg.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default 
+
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  default
+                %button.btn-default.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                %button.btn-default-alt.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                %button.btn-positive.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default.btn-sm
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  small
+                %button.btn-default.btn-icon.btn-sm
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                
+            %h4 Button Loaders
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %button.btn-default.btn-sm
+                  Small Load
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-default
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-default.btn-lg
+                  Large Load
+                  =partial 'images/loading/spinner-sm.svg'
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %button.btn-default
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-default-alt
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %button.btn-highlight
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-highlight-alt
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %button.btn-positive
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-positive-alt
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %button.btn-negative
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-negative-alt
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+            %h4 Sizes
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %button.btn-default.btn-sm 
+                  %div small
+                %button.btn-default default
+                %button.btn-default.btn-lg 
+                  %div large
+            %h4 Button Groups
+
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %p Ensure button elements have no space between them (>)
+                .btn-group
+                  %button.btn-default yes
+                  %button.btn-default> maybe
+                  %button.btn-default no
+            .row.no-gutter.mvxl
+              .col-xs-12
+                .btn-group
+                  %button.btn-default-alt.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/ic_add_48px.svg'
+                  %button.btn-default-alt.btn-icon>
+                    .svgicon
+                      =partial 'images/svg-lib/ic_clear_48px.svg'
+                  %button.btn-default-alt.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/ic_search_48px.svg'
+                
+        %section#forms
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Forms
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %form
+                  .form-group
+                    %label Email
+                    %input.form-control{:type => "email", :placeholder => "Enter email"}
+                  .form-group
+                    %button.btn-default Submit
+            %h4 Row Form (single column)
+            .row.no-gutter.mvxl
               
-
-  %section#grid
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Grid
-      
-
-      
-      .row.no-gutter.mvxl
-        .col-xs-1.mdl-color--deep-purple-600
-          G 1 XS
-        .col-xs-1.mdl-color--purple-600
-          G 1
-        .col-xs-1.mdl-color--deep-purple-600
-          G 1
-        .col-xs-9.mdl-color--purple-600
-          G 9
-        .col-xs-1.mdl-color--deep-purple-600
-          G 1
-        .col-xs-1.mdl-color--purple-600
-          G 1
-        .col-xs-1.mdl-color--deep-purple-600
-          G 1
-        .col-xs-9.mdl-color--purple-600
-          G 9
-      %h4 Offset
-      .row.no-gutter.mvxl
-        .col-xs-8.mdl-color--purple-600
-          G 8 + offset 8
-        .col-xs-offset-8.mdl-color--deep-purple-600
-        .col-xs-8.mdl-color--deep-purple-600
-          G 8
-      %h4 Small 480px
-      .row.no-gutter.mvxl
-        .col-sm-1.mdl-color--deep-purple-600
-          G 1 SM
-        .col-sm-1.mdl-color--purple-600
-          G 1
-        .col-sm-1.mdl-color--deep-purple-600
-          G 1
-        .col-sm-9.mdl-color--purple-600
-          G 9
-        .col-sm-1.mdl-color--deep-purple-600
-          G 1
-        .col-sm-1.mdl-color--purple-600
-          G 1
-        .col-sm-1.mdl-color--deep-purple-600
-          G 1
-        .col-sm-9.mdl-color--purple-600
-          G 9
-      %h4 Medium 620px
-      .row.no-gutter.mvxl
-        .col-md-1.mdl-color--deep-purple-600
-          G 1 MD
-        .col-md-1.mdl-color--purple-600
-          G 1
-        .col-md-1.mdl-color--deep-purple-600
-          G 1
-        .col-md-9.mdl-color--purple-600
-          G 9
-        .col-md-1.mdl-color--deep-purple-600
-          G 1
-        .col-md-1.mdl-color--purple-600
-          G 1
-        .col-md-1.mdl-color--deep-purple-600
-          G 1
-        .col-md-9.mdl-color--purple-600
-          G 9
-      %h4 Large 750px
-      .row.no-gutter.mvxl
-        .col-lg-1.mdl-color--deep-purple-600
-          G 1 LG
-        .col-lg-1.mdl-color--purple-600
-          G 1
-        .col-lg-1.mdl-color--deep-purple-600
-          G 1
-        .col-lg-9.mdl-color--purple-600
-          G 9
-        .col-lg-1.mdl-color--deep-purple-600
-          G 1
-        .col-lg-1.mdl-color--purple-600
-          G 1
-        .col-lg-1.mdl-color--deep-purple-600
-          G 1
-        .col-lg-9.mdl-color--purple-600
-          G 9
+              
+              .col-xs-24
+                .form-group.left
+                  %label Email
+                  %input.form-control{:type => "email", :placeholder => "Email"}
+              
+                .form-group.left
+                  %label Password
+                  %input.form-control{:type => "password", :placeholder => "Password"}
+              
+                .form-group.left
                   
-  %section#tables
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Tables
-      %p 
-        This table has 
-        %code .box-shadow-key-1
-        and
-        %code .no-gutter
-        on the rows. Examples of top and bottom cell alignment, row hovers, and colspans.
-      .table.box-shadow-key-1
-        .th.row.no-gutter
-          .td.col-xs-2
-            Header 1
-          .td.col-xs-2
-            Header 2
-          .td.col-xs-4
-            Header 3
-          .td.col-xs-8
-            Header 4
-          .td.col-xs-8
-            Header 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            %div Cell 1
-            %div Cell 1.2
-          .td.col-xs-2
-            %div Cell 2
-            %div Cell 2.1
-            %div Cell 2.2
-          .td.col-xs-4.vert-top
-            Cell 3 (.vert-top)
-          .td.col-xs-8.vert-bottom
-            Cell 4 (.vert-bottom)
-          .td.col-xs-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            %div Cell 2
-            %div Cell 2.2
-          .td.col-xs-4
-            .type-ellipsis
-              Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
-          .td.col-xs-16
-            Cell 4 + 5
-      %h4 Table Borders and Hovers
-      %p 
-        This table has now box-shadow or hovers. The 
-        %code .no-hover 
-        class can be applied to the entire table or a specific row.
-      .table.no-hover
-        .th.row.no-gutter
-          .td.col-xs-2
-            Header 1
-          .td.col-xs-2
-            Header 2
-          .td.col-xs-4
-            Header 3
-          .td.col-xs-8
-            Header 4
-          .td.col-xs-8
-            Header 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          .td.col-xs-8
-            Cell 5
-      %p 
-        No side borders to cells using class 
-        %code .tr-no-h-borders 
-        on the 
-        %code .tr 
-        or
-        %code .table
-        or
-        %code .th
-      .table.tr-no-h-borders
-        .th.row.no-gutter
-          .td.col-xs-2
-            Header 1
-          .td.col-xs-2
-            Header 2
-          .td.col-xs-4
-            Header 3
-          .td.col-xs-8
-            Header 4
-          .td.col-xs-8
-            Header 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          .td.col-xs-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          .td.col-xs-8
-            Cell 5
-      %p 
-        No borders on anything. Individual cell highlights. Add
-        %code .td-hover
-        to
-        %code .table
-      .table.table-no-borders.td-hover
-        .th.row.no-gutter
-          .td.col-xs-2
-            Header 1
-          .td.col-xs-2
-            Header 2
-          .td.col-xs-4
-            Header 3
-          .td.col-xs-8
-            Header 4
-          .td.col-xs-8
-            Header 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          .td.col-xs-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          .td.col-xs-8
-            Cell 5
-      %h4 Table Linking
-      %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
-      .table
-        .th.row.no-gutter
-          .td.col-xs-2
-            Header 1
-          .td.col-xs-2
-            Header 2
-          .td.col-xs-4
-            Header 3
-          .td.col-xs-8
-            Header 4
-          .td.col-xs-8
-            Header 5
-        .tr.row.no-gutter
-          .td.col-xs-2
-            Cell 1
-          .td.col-xs-2
-            Cell 2
-          .td.col-xs-4
-            Cell 3 
-          .td.col-xs-8
-            Cell 4
-          %a.td.col-xs-8{:href => "#tables", :title => "Everyone Can Read It"}
-            Cell 5
-        %a.tr.row.no-gutter{:href => "#tables", :title => "Everyone Can Read It"}
+                  %button.btn-default.mtxxxl Submit
+            %h4 Inline Single Row
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %form
+                  .form-group.form-inline
+                    %label Email
+                  .form-group.form-inline
+                    %input.form-control{:type => "email", :placeholder => "Enter email"}
+                  .form-group.form-inline
+                    %button.btn-default Submit
+            %h4 Disabled
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %form
+                  .form-group
+                    %label Email
+                    %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
+                  .form-group
+                    %button.btn-default.disabled{:disabled => ""} Submit
+            %h4 Large
+            .row.no-gutter.mvxl
+              .col-xs-12
+                %form
+                  .form-group.form-lg
+                    %label Large
+                    %input.form-control{:type => "text", :placeholder => "Larger"}
+                  .form-group.form-lg
+                    %button.btn-default.btn-lg Large Btn
+            %h4 Select
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %form
+                  .form-group
+                    %select.form-control
+                      %option Pivotal
+                      %option Google
+                      %option Yahoo
+                      %option Microsoft-Linkedin
+            %h4 Search
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %form
+                  .form-group.form-group-search
+                    .svgicon
+                      =partial 'images/svg-lib/ic_search_48px.svg'
+                    %input{:type => "search", :placeholder => "Search..."}
+            %h4 Text Area
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %form
+                  .form-group
+                    %textarea{:placeholder => "Type body here..."}
+            %h4 Radio/Checkbox
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %form
+                  .form-group
+                    %input{:type => "checkbox"}
+                    Remember Me
+                  .form-group
+                    %input{:type => "radio"}
+                    Don't Remember me
+            %h4 Error/Acceptance States
+            .row.no-gutter.mvxl
+              .col-xs-24
+                %form
+                  .form-group.form-inline
+                    %input.invalid{:type => "text", :placeholder => "Enter text"}
+                    .invalid-text Error please try again
+                  .form-group.form-inline
+                    %input.valid{:type => "text", :placeholder => "Enter text"}
+                    .svgicon
+                      =partial 'images/svg-lib/ic_check_circle_48px.svg'
+             
+        %section#grid
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Grid
+            
+
+            
+            .row.no-gutter.mvxl
+              .col-xs-1.mdl-color--deep-purple-600
+                G 1 XS
+              .col-xs-1.mdl-color--purple-600
+                G 1
+              .col-xs-1.mdl-color--deep-purple-600
+                G 1
+              .col-xs-9.mdl-color--purple-600
+                G 9
+              .col-xs-1.mdl-color--deep-purple-600
+                G 1
+              .col-xs-1.mdl-color--purple-600
+                G 1
+              .col-xs-1.mdl-color--deep-purple-600
+                G 1
+              .col-xs-9.mdl-color--purple-600
+                G 9
+            %h4 Offset
+            .row.no-gutter.mvxl
+              .col-xs-8.mdl-color--purple-600
+                G 8 + offset 8
+              .col-xs-offset-8.mdl-color--deep-purple-600
+              .col-xs-8.mdl-color--deep-purple-600
+                G 8
+            %h4 Small 480px
+            .row.no-gutter.mvxl
+              .col-sm-1.mdl-color--deep-purple-600
+                G 1 SM
+              .col-sm-1.mdl-color--purple-600
+                G 1
+              .col-sm-1.mdl-color--deep-purple-600
+                G 1
+              .col-sm-9.mdl-color--purple-600
+                G 9
+              .col-sm-1.mdl-color--deep-purple-600
+                G 1
+              .col-sm-1.mdl-color--purple-600
+                G 1
+              .col-sm-1.mdl-color--deep-purple-600
+                G 1
+              .col-sm-9.mdl-color--purple-600
+                G 9
+            %h4 Medium 620px
+            .row.no-gutter.mvxl
+              .col-md-1.mdl-color--deep-purple-600
+                G 1 MD
+              .col-md-1.mdl-color--purple-600
+                G 1
+              .col-md-1.mdl-color--deep-purple-600
+                G 1
+              .col-md-9.mdl-color--purple-600
+                G 9
+              .col-md-1.mdl-color--deep-purple-600
+                G 1
+              .col-md-1.mdl-color--purple-600
+                G 1
+              .col-md-1.mdl-color--deep-purple-600
+                G 1
+              .col-md-9.mdl-color--purple-600
+                G 9
+            %h4 Large 750px
+            .row.no-gutter.mvxl
+              .col-lg-1.mdl-color--deep-purple-600
+                G 1 LG
+              .col-lg-1.mdl-color--purple-600
+                G 1
+              .col-lg-1.mdl-color--deep-purple-600
+                G 1
+              .col-lg-9.mdl-color--purple-600
+                G 9
+              .col-lg-1.mdl-color--deep-purple-600
+                G 1
+              .col-lg-1.mdl-color--purple-600
+                G 1
+              .col-lg-1.mdl-color--deep-purple-600
+                G 1
+              .col-lg-9.mdl-color--purple-600
+                G 9
+         
+        %section#links
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Links
+            
+            %ul.list-unstyled
+              %li
+                %a{:href => "#links"} Default Link Text
+              %li
+                %a.underline{:href => "#links"} Underlined Link Text
+              %li
+                %a.hover-underline{:href => "#links"} Hover Underline Link Text
+            
+            
+            
+
+        %section#lists
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Lists
+            
+            %h4 UL
+            %ul
+              %li List Item 1
+              %li List Item 2
+              %li List Item 3
+             
+              %ul
+                %li Secondary List Item 1
+                %li Secondary List Item 2
+                %li Secondary List Item 3
+            %h4 OL
+            %ol
+              %li List Item 1
+              %li List Item 2
+              %li List Item 3
+
+              %ol
+                %li Secondary List Item 1
+                %li Secondary List Item 2
+                %li Secondary List Item 3
+            %h4 Unstyled List
+            %ul.list-unstyled
+              %li List Item 1
+              %li List Item 2
+              %li List Item 3
+
+
+            
+
           
-          .td.col-xs-24
-            Cell 24
-      %h4 Table Breaks
-      %p 
-        Large Column breaks (750px) Collapse Rows add
-        %code .table-lg-row 
-        to the 
-        %code .table
-      .table.table-lg-row
-        .tr.row.no-gutter
-          .td.col-lg-2
-            Cell 1
-          .td.col-lg-2
-            Cell 2
-          .td.col-lg-4
-            Cell 3 
-          .td.col-lg-8
-            Cell 4
-          .td.col-lg-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-lg-2
-            Cell 1
-          .td.col-lg-2
-            Cell 2
-          .td.col-lg-4
-            Cell 3 
-          .td.col-lg-8
-            Cell 4
-          .td.col-lg-8
-            Cell 5
-      %p 
-        Medium Column breaks (620px) Collapse Rows add 
-        %code .table-md-row 
-        to the 
-        %code .table
-      .table.table-md-row
-        .tr.row.no-gutter
-          .td.col-md-2
-            Cell 1
-          .td.col-md-2
-            Cell 2
-          .td.col-md-4
-            Cell 3 
-          .td.col-md-8
-            Cell 4
-          .td.col-md-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-md-2
-            Cell 1
-          .td.col-md-2
-            Cell 2
-          .td.col-md-4
-            Cell 3 
-          .td.col-md-8
-            Cell 4
-          .td.col-md-8
-            Cell 5
-      %p
-        Small Column breaks (480px) Collapse Rows add 
-        %code .table-sm-row 
-        to the 
-        %code .table
-      .table.table-sm-row
-        .tr.row.no-gutter
-          .td.col-sm-2
-            Cell 1
-          .td.col-sm-2
-            Cell 2
-          .td.col-sm-4
-            Cell 3 
-          .td.col-sm-8
-            Cell 4
-          .td.col-sm-8
-            Cell 5
-        .tr.row.no-gutter
-          .td.col-sm-2
-            Cell 1
-          .td.col-sm-2
-            Cell 2
-          .td.col-sm-4
-            Cell 3 
-          .td.col-sm-8
-            Cell 4
-          .td.col-sm-8
-            Cell 5
+
+        %section#tables
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Tables
+            %p 
+              This table has 
+              %code .box-shadow-key-1
+              and
+              %code .no-gutter
+              on the rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+            .table.box-shadow-key-1
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  %div Cell 1
+                  %div Cell 1.2
+                .td.col-xs-2
+                  %div Cell 2
+                  %div Cell 2.1
+                  %div Cell 2.2
+                .td.col-xs-4.vert-top
+                  Cell 3 (.vert-top)
+                .td.col-xs-8.vert-bottom
+                  Cell 4 (.vert-bottom)
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  %div Cell 2
+                  %div Cell 2.2
+                .td.col-xs-4
+                  .type-ellipsis
+                    Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+                .td.col-xs-16
+                  Cell 4 + 5
+            %h4 Table Borders and Hovers
+            %p 
+              This table has now box-shadow or hovers. The 
+              %code .no-hover 
+              class can be applied to the entire table or a specific row.
+            .table.no-hover
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %p 
+              No side borders to cells using class 
+              %code .tr-no-h-borders 
+              on the 
+              %code .tr 
+              or
+              %code .table
+              or
+              %code .th
+            .table.tr-no-h-borders
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %p 
+              No borders on anything. Individual cell highlights. Add
+              %code .td-hover
+              to
+              %code .table
+            .table.table-no-borders.td-hover
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %h4 Table Linking
+            %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
+            .table
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                %a.td.col-xs-8{:href => "#tables", :title => "Everyone Can Read It"}
+                  Cell 5
+              %a.tr.row.no-gutter{:href => "#tables", :title => "Everyone Can Read It"}
+                
+                .td.col-xs-24
+                  Cell 24
+            %h4 Table Breaks
+            %p 
+              Large Column breaks (750px) Collapse Rows add
+              %code .table-lg-row 
+              to the 
+              %code .table
+            .table.table-lg-row
+              .tr.row.no-gutter
+                .td.col-lg-2
+                  Cell 1
+                .td.col-lg-2
+                  Cell 2
+                .td.col-lg-4
+                  Cell 3 
+                .td.col-lg-8
+                  Cell 4
+                .td.col-lg-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-lg-2
+                  Cell 1
+                .td.col-lg-2
+                  Cell 2
+                .td.col-lg-4
+                  Cell 3 
+                .td.col-lg-8
+                  Cell 4
+                .td.col-lg-8
+                  Cell 5
+            %p 
+              Medium Column breaks (620px) Collapse Rows add 
+              %code .table-md-row 
+              to the 
+              %code .table
+            .table.table-md-row
+              .tr.row.no-gutter
+                .td.col-md-2
+                  Cell 1
+                .td.col-md-2
+                  Cell 2
+                .td.col-md-4
+                  Cell 3 
+                .td.col-md-8
+                  Cell 4
+                .td.col-md-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-md-2
+                  Cell 1
+                .td.col-md-2
+                  Cell 2
+                .td.col-md-4
+                  Cell 3 
+                .td.col-md-8
+                  Cell 4
+                .td.col-md-8
+                  Cell 5
+            %p
+              Small Column breaks (480px) Collapse Rows add 
+              %code .table-sm-row 
+              to the 
+              %code .table
+            .table.table-sm-row
+              .tr.row.no-gutter
+                .td.col-sm-2
+                  Cell 1
+                .td.col-sm-2
+                  Cell 2
+                .td.col-sm-4
+                  Cell 3 
+                .td.col-sm-8
+                  Cell 4
+                .td.col-sm-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-sm-2
+                  Cell 1
+                .td.col-sm-2
+                  Cell 2
+                .td.col-sm-4
+                  Cell 3 
+                .td.col-sm-8
+                  Cell 4
+                .td.col-sm-8
+                  Cell 5
+             
+        %section#loading-spinners
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Loading Spinners
+            .row.no-gutter.mvxl
+              .col-sm-8.txt-c
+                =partial 'images/loading/spinner.svg'
+              .col-sm-8.txt-c
+                =partial 'images/loading/spinner-md.svg'
+              .col-sm-8.txt-c
+                =partial 'images/loading/spinner-sm.svg'
+
+        %section#icons
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Icons
+            
+
+
+            .row.mvxl
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_sync_48px.svg'
+                .sg-icon-label
+                  Sync
+                %code
+                  ic_sync_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_account_circle_48px.svg'
+                .sg-icon-label
+                  Account Circle
+                %code
+                  ic_account_circle_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_check_circle_48px.svg'
+                .sg-icon-label
+                  Check Circle
+                %code
+                  ic_check_circle_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_highlight_off_48px.svg'
+                .sg-icon-label
+                  Close Circle
+                %code
+                  ic_highlight_off_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_clear_48px.svg'
+                .sg-icon-label
+                  Clear / Close
+                %code
+                  ic_clear_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_search_48px.svg'
+                .sg-icon-label
+                  Search
+                %code
+                  ic_search_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_add_48px.svg'
+                .sg-icon-label
+                  Add / Plus
+                %code
+                  ic_add_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_add_circle_48px.svg'
+                .sg-icon-label
+                  Add Circle
+                %code
+                  ic_add_circle_48px.svg
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/ic_add_circle_outline_48px.svg'
+                .sg-icon-label
+                  Add Circle Outline
+                %code
+                  ic_add_circle_outline_48px.svg
         
-
-
-  
-  %section#loading-spinners
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Loading Spinners
-      .row.no-gutter.mvxl
-        .col-sm-8.txt-c
-          =partial 'images/loading/spinner.svg'
-        .col-sm-8.txt-c
-          =partial 'images/loading/spinner-md.svg'
-        .col-sm-8.txt-c
-          =partial 'images/loading/spinner-sm.svg'
-
-  %section#icons
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Icons
-      
-
-
-      .row.mvxl
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_sync_48px.svg'
-          .sg-icon-label
-            Sync
-          %code
-            ic_sync_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_account_circle_48px.svg'
-          .sg-icon-label
-            Account Circle
-          %code
-            ic_account_circle_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_check_circle_48px.svg'
-          .sg-icon-label
-            Check Circle
-          %code
-            ic_check_circle_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_highlight_off_48px.svg'
-          .sg-icon-label
-            Close Circle
-          %code
-            ic_highlight_off_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_clear_48px.svg'
-          .sg-icon-label
-            Clear / Close
-          %code
-            ic_clear_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_search_48px.svg'
-          .sg-icon-label
-            Search
-          %code
-            ic_search_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_add_48px.svg'
-          .sg-icon-label
-            Add / Plus
-          %code
-            ic_add_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_add_circle_48px.svg'
-          .sg-icon-label
-            Add Circle
-          %code
-            ic_add_circle_48px.svg
-        .sg-icon-tile
-          .svgicon
-            =partial 'images/svg-lib/ic_add_circle_outline_48px.svg'
-          .sg-icon-label
-            Add Circle Outline
-          %code
-            ic_add_circle_outline_48px.svg
-  %section#typography
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1 Typography
-      .row.no-gutter.phxl
-        .col-xs-12.phxl
-          %h1 H1 64px
-          %h2 H2 48px
-          %h3 H3 32px
-          %h4 H4 24px
-          %h5 H5 18px
-          %h6 H6 13px
-          %p Paragraph Tag
-          .type-sm Type-Small 12px
-          .type-default Type-Default 14px
-          .type-lg Type-Large 16px
-  
+        %section#typography
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Typography
+            .row.no-gutter.phxl
+              .col-xs-12.phxl
+                %h1 H1 64px
+                %h2 H2 48px
+                %h3 H3 32px
+                %h4 H4 24px
+                %h5 H5 18px
+                %h6 H6 13px
+                %p Paragraph Tag
+                .type-sm Type-Small 12px
+                .type-default Type-Default 14px
+                .type-lg Type-Large 16px
+    
 
         
 

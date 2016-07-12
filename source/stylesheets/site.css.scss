@@ -9,9 +9,9 @@
 
 ////Vendor---------------------------
 
-//8px-Foundation-Styleguide
+//8pt-Foundation-Styleguide
 //-------------------------------
-@import "_vendor/_8px-foundation/_8px-style";
+@import "_vendor/_8pt-foundation/_8pt-style";
 
 //Google Material (load colors OR all of material)
 //-------------------------------
@@ -21,12 +21,14 @@
 
 
 
-////8px-Foundation-Core---------------------------
+////8pt-Foundation-Core---------------------------
 @import "_style/box-shadows";
 @import "_style/buttons";
 @import "_style/flexboxgrid";
 @import "_style/forms";
 @import "_style/layout";
+@import "_style/links";
+@import "_style/lists";
 @import "_style/loading-spinner";
 @import "_style/media-sizes";
 @import "_style/style";
