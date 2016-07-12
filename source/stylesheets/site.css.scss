@@ -1,17 +1,23 @@
 @charset "utf-8";
+//Normalize
+@import "normalize";
 
 ////Variables
 @import "_style/variables";
 
+
+
 ////Vendor---------------------------
-	//8px-Foundation-Styleguide
-	//-------------------------------
+
+//8px-Foundation-Styleguide
+//-------------------------------
 @import "_vendor/_8px-foundation/_8px-style";
 
-	//Google Material (load colors OR all of material)
-	//-------------------------------
+//Google Material (load colors OR all of material)
+//-------------------------------
 @import "_vendor/_material/colors";
 //@import "_vendor/_material/material";
+
 
 
 
@@ -23,15 +29,14 @@
 @import "_style/layout";
 @import "_style/loading-spinner";
 @import "_style/media-sizes";
-@import "_style/oo-whitespace";
 @import "_style/style";
 @import "_style/svg-library";
 @import "_style/tables";
 @import "_style/typography";
 @import "_style/video";
+@import "_style/whitespace";
 
-//Normalize
-@import "normalize";
+
 
 
 
