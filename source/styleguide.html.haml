@@ -276,11 +276,11 @@ title: 8pt Foundation Styleguide
               .col-xs-24
                 %form
                   .form-group.form-inline
-                    %input.invalid{:type => "text", :placeholder => "Enter text"}
+                    %input.invalid{:type => "text", :placeholder => "Enter text", :value => "You're Wrong!"}
                     .invalid-text Error please try again
                   .form-group.form-inline
-                    %input.valid{:type => "text", :placeholder => "Enter text"}
-                    .svgicon
+                    %input.valid{:type => "text", :placeholder => "Enter text", :value => "You're Right!"}
+                    .svgicon.valid
                       =partial 'images/svg-lib/ic_check_circle_48px.svg'
              
         %section#grid

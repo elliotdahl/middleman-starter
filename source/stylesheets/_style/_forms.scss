@@ -71,11 +71,8 @@ input[type="radio"] {
 
 label,
 legend {
-    
     color: $blue-grey-600;
 }
-
-
 
 .form-group-search {
     position: relative;
@@ -97,6 +94,7 @@ legend {
 .form-group {
     margin-bottom: $spacing-base;
     margin-right: $spacing-base;
+    position: relative;
     label {
         display: block;
         font-weight: 600;
@@ -113,6 +111,19 @@ legend {
             pointer-events: none;
             color: $blue-grey-700;
             border-color: $blue-grey-100;
+        }
+    }
+    //Validation Icons
+    .svgicon {
+        position: absolute;
+        right: $spacing-base;
+        top: $spacing-base;
+        font-size: 16px;
+        &.valid svg {
+            fill: $input-border-valid;
+        }
+        &.invalid svg {
+            fill: $input-border-invalid;
         }
     }
 }
