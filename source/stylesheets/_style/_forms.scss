@@ -74,20 +74,7 @@ legend {
     color: $blue-grey-600;
 }
 
-.form-group-search {
-    position: relative;
-    .svgicon {
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        font-size: 20px;
-        fill: $blue-grey-600;
-    }
-    input {
-        padding-left: 32px;
-    }
-}
+
 
 //Form Groupings
 //-------------------------------------
@@ -127,6 +114,22 @@ legend {
         }
     }
 }
+
+.form-group-search {
+    position: relative;
+    .svgicon {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        fill: $blue-grey-600;
+    }
+    input {
+        padding-left: 32px;
+    }
+}
+
 
 .form-lg {
     label {
@@ -193,4 +196,19 @@ textarea.valid {
 .invalid-text {
     font-size: 12px;
     color: $input-invalid-text;
+}
+.form-group {
+    //Validation Icons
+    .svgicon {
+        position: absolute;
+        right: $spacing-base;
+        top: $spacing-base;
+        font-size: 16px;
+        &.valid svg {
+            fill: $input-border-valid;
+        }
+        &.invalid svg {
+            fill: $input-border-invalid;
+        }
+    }
 }

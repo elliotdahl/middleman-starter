@@ -272,11 +272,14 @@ title: 8pt Foundation Styleguide
                     %input{:type => "radio"}
                     Don't Remember me
             %h4 Error/Acceptance States
+            %p Click on the red "x" in the error state to clear the form field and rest the error.
             .row.no-gutter.mvxl
               .col-xs-24
                 %form
                   .form-group.form-inline
                     %input.invalid{:type => "text", :placeholder => "Enter text", :value => "You're Wrong!"}
+                    .svgicon.invalid
+                      =partial 'images/svg-lib/ic_clear_48px.svg'
                     .invalid-text Error please try again
                   .form-group.form-inline
                     %input.valid{:type => "text", :placeholder => "Enter text", :value => "You're Right!"}
