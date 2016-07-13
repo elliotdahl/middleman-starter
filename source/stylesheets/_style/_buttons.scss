@@ -12,7 +12,7 @@ input[type="button"] {
     height: ($spacing-base*4);
     padding: 0 ($spacing-base*3);
     vertical-align: middle;
-    color: #555;
+    color: $btn-default-color;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -23,7 +23,7 @@ input[type="button"] {
     white-space: nowrap;
     background-color: transparent;
     border-radius: $btn-radius;
-    border: 2px solid #bbb;
+    border: 2px solid transparent;
     cursor: pointer;
     box-sizing: border-box;
     //Transitions
