@@ -200,10 +200,13 @@ textarea.valid {
 .form-group {
     //Validation Icons
     .svgicon {
-        position: absolute;
+        &.valid,&.invalid {
+           position: absolute;
         right: $spacing-base;
         top: $spacing-base;
         font-size: 16px;
+        }
+        
         &.valid svg {
             fill: $input-border-valid;
         }
