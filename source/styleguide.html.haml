@@ -6,79 +6,76 @@ title: 8pt Foundation Styleguide
 
   
   .margin-auto.relative
-    .row
-      .col-md-4.mdl-color--grey-100
-        %section.fixed
-          .section-content.margin-auto.paxl
-            %ul.list-unstyled.type-lg
-              %li 
-                %a.hover-underline{:href => "#get-started"} Get Started
-              %li 
-                %a.hover-underline{:href => "#buttons"} Buttons
-              %li
-                %a.hover-underline{:href => "#forms"} Forms
-              %li
-                %a.hover-underline{:href => "#grids"} Grid
-              %li
-                %a.hover-underline{:href => "#links"} Links
-              %li
-                %a.hover-underline{:href => "#lists"} Lists
-              %li
-                %a.hover-underline{:href => "#tables"} Tables
-              %li
-                %a.hover-underline{:href => "#loading-spinners"} Loading Spinners
-              %li
-                %a.hover-underline{:href => "#icons"} Icons
-              %li
-                %a.hover-underline{:href => "#typography"} Typography
-
-      .col-md-20
+    %section.sg-sidenav.box-shadow-2
+      .section-content.margin-auto
+        .sg-sidenav-hero.mdl-color--blue-500.txt-c.pvxl
+          .monoton.type-white
+            %h1.mbn 8pt
+        %ul.list-unstyled.paxl.type-md
+          %li 
+            %a.hover-underline{:href => "#get-started"} Get Started
+          %li 
+            %a.hover-underline{:href => "#buttons"} Buttons
+          %li
+            %a.hover-underline{:href => "#forms"} Forms
+          %li
+            %a.hover-underline{:href => "#grids"} Grid
+          %li
+            %a.hover-underline{:href => "#links"} Links
+          %li
+            %a.hover-underline{:href => "#lists"} Lists
+          %li
+            %a.hover-underline{:href => "#tables"} Tables
+          %li
+            %a.hover-underline{:href => "#loading-spinners"} Loading Spinners
+          %li
+            %a.hover-underline{:href => "#icons"} Icons
+          %li
+            %a.hover-underline{:href => "#typography"} Typography
+    .row.sg-content.no-gutter
+      .col-md-24
         %section#get-started
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Get Started
+            %h3 Get Started
             %a.button.btn-highlight.btn-lg{:href => "https://github.com/edahl9/middleman-starter", :target => "_blank"} Download
             %p.mtm.mbn Version: 0.1
         %section#buttons
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Buttons
+            %h2.section-header Buttons
             %p 
               Four different button colors and their alt variations. The base 
               %code button
               and
               %code .button
               is the default ghost. You can modify it's color with a class.
-          
-            .row.no-gutter.mvxl
-              .col-xs-12
+            
+            .section-format.mbxl
+              .mbxl
                 %button.btn-default Button
                 %button.btn-default-alt Alt Button
                 %button Ghost
-                
-            .row.no-gutter.mvxl
-              .col-xs-12
+                  
+              .mbxl
                 %button.btn-highlight Highlight 
                 %button.btn-highlight-alt Highlight Alt
                 %button.type-blue-500 Ghost
 
-            .row.no-gutter.mvxl
-              .col-xs-12
+              .mbxl
                 %button.btn-positive Positive
                 %button.btn-positive-alt Positive Alt
-            .row.no-gutter.mvxl
-              .col-xs-12
+              %div
                 %button.btn-negative Negative
                 %button.btn-negative-alt Negative Alt
             
                 
             %h4 Disabled
             
-            .row.no-gutter.mvxl
-              .col-xs-12
-                %button.btn-default.disabled{:disabled => ""} Button
-                %button.btn-default-alt.disabled{:disabled => ""} Alt Button
+            .section-format.mbxl
+              %button.btn-default.disabled{:disabled => ""} Button
+              %button.btn-default-alt.disabled{:disabled => ""} Alt Button
             %h4 Icon Buttons
-            .row.no-gutter.mvxl
-              .col-xs-12
+            .section-format.mbxl
+              .mbxl
                 %button.btn-default.btn-lg
 
                   .svgicon
@@ -87,8 +84,7 @@ title: 8pt Foundation Styleguide
                 %button.btn-default.btn-lg.btn-icon
                   .svgicon
                     =partial 'images/svg-lib/ic_add_48px.svg'
-            .row.no-gutter.mvxl
-              .col-xs-12
+              .mbxl
                 %button.btn-default 
 
                   .svgicon
@@ -104,8 +100,7 @@ title: 8pt Foundation Styleguide
                   .svgicon
                     =partial 'images/svg-lib/ic_add_48px.svg'
                 
-            .row.no-gutter.mvxl
-              .col-xs-12
+              %div
                 %button.btn-default.btn-sm
                   .svgicon
                     =partial 'images/svg-lib/ic_add_48px.svg'
@@ -115,8 +110,8 @@ title: 8pt Foundation Styleguide
                     =partial 'images/svg-lib/ic_add_48px.svg'
                 
             %h4 Button Loaders
-            .row.no-gutter.mvxl
-              .col-xs-24
+            .section-format.mbxl
+              .mbxl
                 %button.btn-default.btn-sm
                   Small Load
                   =partial 'images/loading/spinner-sm.svg'
@@ -126,32 +121,28 @@ title: 8pt Foundation Styleguide
                 %button.btn-default.btn-lg
                   Large Load
                   =partial 'images/loading/spinner-sm.svg'
-            .row.no-gutter.mvxl
-              .col-xs-24
+              .mbxl
                 %button.btn-default
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
                 %button.btn-default-alt
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
-            .row.no-gutter.mvxl
-              .col-xs-24
+              .mbxl
                 %button.btn-highlight
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
                 %button.btn-highlight-alt
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
-            .row.no-gutter.mvxl
-              .col-xs-24
+              .mbxl
                 %button.btn-positive
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
                 %button.btn-positive-alt
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
-            .row.no-gutter.mvxl
-              .col-xs-24
+              %div
                 %button.btn-negative
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
@@ -159,24 +150,22 @@ title: 8pt Foundation Styleguide
                   Loading
                   =partial 'images/loading/spinner-sm.svg'
             %h4 Sizes
-            .row.no-gutter.mvxl
-              .col-xs-12
-                %button.btn-default.btn-sm 
-                  %div small
-                %button.btn-default default
-                %button.btn-default.btn-lg 
-                  %div large
+            .section-format.mbxl
+              %button.btn-default.btn-sm 
+                %div small
+              %button.btn-default default
+              %button.btn-default.btn-lg 
+                %div large
             %h4 Button Groups
-
-            .row.no-gutter.mvxl
-              .col-xs-12
-                %p Ensure HAML button elements have no space between them (>)
+            %p Ensure HAML button elements have no space between them (>)
+            .section-format
+              .mbxl
+                
                 .btn-group
                   %button.btn-default-alt yes
                   %button.btn-default> maybe
                   %button.btn-default-alt no
-            .row.no-gutter.mvxl
-              .col-xs-12
+              %div
                 .btn-group
                   %button.btn-default-alt.btn-icon
                     .svgicon
@@ -190,7 +179,7 @@ title: 8pt Foundation Styleguide
                 
         %section#forms
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Forms
+            %h2.section-header Forms
             .row.no-gutter.mvxl
               .col-xs-12
                 %form
@@ -294,7 +283,7 @@ title: 8pt Foundation Styleguide
              
         %section#grid
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Grid
+            %h2.section-header Grid
             
 
             
@@ -379,7 +368,7 @@ title: 8pt Foundation Styleguide
          
         %section#links
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Links
+            %h2.section-header Links
             
             %ul.list-unstyled
               %li
@@ -394,7 +383,7 @@ title: 8pt Foundation Styleguide
 
         %section#lists
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Lists
+            %h2.section-header Lists
             
             %h4 UL
             %ul
@@ -429,7 +418,7 @@ title: 8pt Foundation Styleguide
 
         %section#tables
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Tables
+            %h2.section-header Tables
             %p 
               This table has 
               %code .box-shadow-key-1
@@ -700,7 +689,7 @@ title: 8pt Foundation Styleguide
              
         %section#loading-spinners
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Loading Spinners
+            %h2.section-header Loading Spinners
             .row.no-gutter.mvxl
               .col-sm-8.txt-c
                 =partial 'images/loading/spinner.svg'
@@ -711,7 +700,7 @@ title: 8pt Foundation Styleguide
 
         %section#icons
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Icons
+            %h2.section-header Icons
             
 
 
@@ -782,19 +771,20 @@ title: 8pt Foundation Styleguide
         
         %section#typography
           .section-content.margin-auto.paxl.mdl-color--white
-            %h1 Typography
-            .row.no-gutter.phxl
-              .col-xs-12.phxl
-                %h1 H1 64px
-                %h2 H2 48px
-                %h3 H3 32px
-                %h4 H4 24px
-                %h5 H5 18px
-                %h6 H6 13px
-                %p Paragraph Tag
-                .type-sm Type-Small 12px
-                .type-default Type-Default 14px
-                .type-lg Type-Large 16px
+            %h2.section-header Typography
+            .section-format
+              %h1 H1 48px
+              %h2 H2 40px
+              %h3 H3 32px
+              %h4 H4 24px
+              %h5 H5 20px
+              %h6 H6 13px
+              %p Paragraph Tag
+              .type-sm Type-sm 12px
+              .type-md Type-md 14px
+              .type-default Type-Default 16px
+
+              .type-lg Type-lg 16px
     
 
         

@@ -11,9 +11,15 @@ $sg-rim-high:#fff;
 }
 
 .sg-sidenav {
+    z-index: 1;
     position:fixed;
     top:0;
     left:0;
+    width:240px;
+    height: 100vh;
+}
+.sg-content {
+    padding-left:256px;
 }
 
 

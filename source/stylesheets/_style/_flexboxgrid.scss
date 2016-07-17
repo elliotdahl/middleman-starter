@@ -1,8 +1,4 @@
-
-
 //Flexbox ---------------------------
-
-
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -52,6 +48,13 @@
     -webkit-box-direction: reverse;
     flex-direction: column-reverse;
 }
+//Add column paddings. No native padding on columns.
+.col-phl {
+    div[class^="col-"]{
+        padding-right: $spacing-base;
+        padding-left: $spacing-base;
+    }
+}
 
 //Columns
 //XSmall Size
@@ -85,8 +88,6 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: $spacing-base;
-    padding-left: $spacing-base;
 }
 
 .col-xs {
@@ -463,8 +464,6 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: $spacing-base;
-    padding-left: $spacing-base;
     width: 100%;
 }
 
@@ -790,8 +789,6 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: $spacing-base;
-    padding-left: $spacing-base;
     width: 100%;
 }
 
@@ -1117,8 +1114,6 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: $spacing-base;
-    padding-left: $spacing-base;
     width: 100%;
 }
 
