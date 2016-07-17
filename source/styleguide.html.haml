@@ -2,18 +2,17 @@
 title: 8pt Foundation Styleguide
 ---
 
-.page.mdl-color--blue-500
-  %section.ptxl.pbxl.txt-c.styleguide-header
-    .section-content.margin-auto.paxl.mdl-color--white
-      %h1.txt-c.mbxl.monoton{:style => "font-size:64px;"} The Styleguide
-      %a.button.btn-highlight.btn-lg{:href => "https://github.com/edahl9/middleman-starter", :target => "_blank"} Download
-      %p.mtm.mbn Version: 0.1
-  .page-container.margin-auto
+.page
+
+  
+  .margin-auto.relative
     .row
-      .col-md-4
-        %section
-          .section-content.margin-auto.paxl.mdl-color--white
+      .col-md-4.mdl-color--grey-100
+        %section.fixed
+          .section-content.margin-auto.paxl
             %ul.list-unstyled.type-lg
+              %li 
+                %a.hover-underline{:href => "#get-started"} Get Started
               %li 
                 %a.hover-underline{:href => "#buttons"} Buttons
               %li
@@ -32,7 +31,13 @@ title: 8pt Foundation Styleguide
                 %a.hover-underline{:href => "#icons"} Icons
               %li
                 %a.hover-underline{:href => "#typography"} Typography
+
       .col-md-20
+        %section#get-started
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h1 Get Started
+            %a.button.btn-highlight.btn-lg{:href => "https://github.com/edahl9/middleman-starter", :target => "_blank"} Download
+            %p.mtm.mbn Version: 0.1
         %section#buttons
           .section-content.margin-auto.paxl.mdl-color--white
             %h1 Buttons
