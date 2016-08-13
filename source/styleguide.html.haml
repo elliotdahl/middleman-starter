@@ -270,8 +270,25 @@ title: 8pt Foundation Styleguide
                   %input.valid{:type => "text", :placeholder => "Enter text", :value => "Right Answer"}
                   .svgicon.valid
                     =partial 'images/svg-lib/ic_check_circle_48px.svg'
+                .form-group.form-inline
+                  %input.loader{:type => "text", :placeholder => "Enter text", :value => "Hold up..."}
+                  .svgicon.loading
+                    =partial 'images/loading/spinner-sm.svg'
+            %h4 Simple Forms
+            %p Iron out simple use case.
+            .section-format.mbxl
+              %form.simple-form
+                .form-group.form-inline
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group.form-inline
+                  %input.form-control.disabled{:type => "email", :value => "disabled"}
+                .form-group.form-inline
+                  %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
+                  .svgicon.invalid
+                    =partial 'images/svg-lib/ic_clear_48px.svg'
+                  .invalid-text Error please try again
              
-        %section#grid
+        %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Grid
             
