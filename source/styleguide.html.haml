@@ -181,7 +181,7 @@ title: 8pt Foundation Styleguide
         %section#forms
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Forms
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group
                   %label Email
@@ -189,7 +189,7 @@ title: 8pt Foundation Styleguide
                 .form-group
                   %button.btn-default Submit
             %h4 Row Form (single column)
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               .form-group.left
                 %label Email
                 %input.form-control{:type => "email", :placeholder => "Email"}
@@ -203,7 +203,7 @@ title: 8pt Foundation Styleguide
                 %button.btn-default.mtxxxl Submit
               .clear
             %h4 Inline Single Row
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group.form-inline
                   %label Email
@@ -212,7 +212,7 @@ title: 8pt Foundation Styleguide
                 .form-group.form-inline
                   %button.btn-default Submit
             %h4 Disabled
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group
                   %label Email
@@ -220,7 +220,7 @@ title: 8pt Foundation Styleguide
                 .form-group
                   %button.btn-default.disabled{:disabled => ""} Submit
             %h4 Large
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group.form-lg
                   %label Large
@@ -228,7 +228,7 @@ title: 8pt Foundation Styleguide
                 .form-group.form-lg
                   %button.btn-default.btn-lg Large Btn
             %h4 Select
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group
                   %select.form-control
@@ -237,19 +237,19 @@ title: 8pt Foundation Styleguide
                     %option Yahoo
                     %option Microsoft-Linkedin
             %h4 Search
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group.form-group-search
                   .svgicon
                     =partial 'images/svg-lib/ic_search_48px.svg'
                   %input{:type => "search", :placeholder => "Search..."}
             %h4 Text Area
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group
                   %textarea{:placeholder => "Type body here..."}
             %h4 Radio/Checkbox
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group
                   %input{:type => "checkbox"}
@@ -259,7 +259,7 @@ title: 8pt Foundation Styleguide
                   Don't Remember me
             %h4 Error/Acceptance States
             %p Click on the red "x" in the error state to clear the form field and rest the error.
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form
                 .form-group.form-inline
                   %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
@@ -276,7 +276,7 @@ title: 8pt Foundation Styleguide
                     =partial 'images/loading/spinner-sm.svg'
             %h4 Simple Forms
             %p Iron out simple use case.
-            .section-format.mbxl
+            .section-format.mbxl.pbl
               %form.simple-form
                 .form-group.form-inline
                   %input.form-control{:type => "email", :placeholder => "Enter email"}
