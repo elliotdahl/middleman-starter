@@ -291,87 +291,102 @@ title: 8pt Foundation Styleguide
         %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Grid
-            
-
-            
             .row.no-gutter.mvxl
-              .col-xs-1.mdl-color--deep-purple-600
+              .col-xs-1.blue-grey-100-bg
                 G 1 XS
-              .col-xs-1.mdl-color--purple-600
+              .col-xs-1.blue-grey-200-bg
                 G 1
-              .col-xs-1.mdl-color--deep-purple-600
+              .col-xs-1.blue-grey-100-bg
                 G 1
-              .col-xs-9.mdl-color--purple-600
+              .col-xs-9.blue-grey-200-bg
                 G 9
-              .col-xs-1.mdl-color--deep-purple-600
+              .col-xs-1.blue-grey-100-bg
                 G 1
-              .col-xs-1.mdl-color--purple-600
+              .col-xs-1.blue-grey-200-bg
                 G 1
-              .col-xs-1.mdl-color--deep-purple-600
+              .col-xs-1.blue-grey-100-bg
                 G 1
-              .col-xs-9.mdl-color--purple-600
+              .col-xs-9.blue-grey-200-bg
                 G 9
             %h4 Offset
             .row.no-gutter.mvxl
-              .col-xs-8.mdl-color--purple-600
+              .col-xs-8.blue-grey-100-bg
                 G 8 + offset 8
-              .col-xs-offset-8.mdl-color--deep-purple-600
-              .col-xs-8.mdl-color--deep-purple-600
+              .col-xs-offset-8
+              .col-xs-8.blue-grey-200-bg
                 G 8
+            %h4 Padding Horizontal Base
+            %p 
+              Adding 
+              %code .col-phl
+              to the
+              %code .row
+              element will include the base padding horizontally while pulling negatively left and right 
+            .row.no-gutter.mvxl.col-phl
+              .col-xs-2.blue-grey-200-bg
+                G 2
+              .col-xs-2.blue-grey-100-bg
+                G 2
+              .col-xs-6.blue-grey-200-bg
+                G 6
+              .col-xs-4.blue-grey-100-bg
+                G 4
+              .col-xs-4.blue-grey-200-bg
+                G 4
+              .col-xs-6.blue-grey-100-bg
+                G 6
+            %h4 Extra Small
+            %p 
+              Never collapse, maintain proportions at all sizes.
+              %code .col-xs-12
+            .row.no-gutter.mvxl
+              .col-xs-4.blue-grey-100-bg
+                G 4 XS
+              .col-xs-4.blue-grey-200-bg
+                G 4
+              .col-xs-4.blue-grey-100-bg
+                G 4
+              .col-xs-4.blue-grey-200-bg
+                G 4
+              .col-xs-4.blue-grey-100-bg
+                G 4
+              .col-xs-4.blue-grey-200-bg
+                G 4
             %h4 Small 480px
+            %p 
+              Collapse to 100% width stacking at 480px screen size with 
+              %code .col-sm-12
             .row.no-gutter.mvxl
-              .col-sm-1.mdl-color--deep-purple-600
-                G 1 SM
-              .col-sm-1.mdl-color--purple-600
-                G 1
-              .col-sm-1.mdl-color--deep-purple-600
-                G 1
-              .col-sm-9.mdl-color--purple-600
-                G 9
-              .col-sm-1.mdl-color--deep-purple-600
-                G 1
-              .col-sm-1.mdl-color--purple-600
-                G 1
-              .col-sm-1.mdl-color--deep-purple-600
-                G 1
-              .col-sm-9.mdl-color--purple-600
-                G 9
+              .col-sm-6.blue-grey-100-bg
+                G 6 SM
+              .col-sm-6.blue-grey-200-bg
+                G 6
+              .col-sm-6.blue-grey-100-bg
+                G 6
+              .col-sm-6.blue-grey-200-bg
+                G 6
+              
             %h4 Medium 620px
+            %p 
+              Collapse to 100% width stacking at 620px screen size with 
+              %code .col-md-12
             .row.no-gutter.mvxl
-              .col-md-1.mdl-color--deep-purple-600
-                G 1 MD
-              .col-md-1.mdl-color--purple-600
-                G 1
-              .col-md-1.mdl-color--deep-purple-600
-                G 1
-              .col-md-9.mdl-color--purple-600
-                G 9
-              .col-md-1.mdl-color--deep-purple-600
-                G 1
-              .col-md-1.mdl-color--purple-600
-                G 1
-              .col-md-1.mdl-color--deep-purple-600
-                G 1
-              .col-md-9.mdl-color--purple-600
-                G 9
+              .col-md-8.blue-grey-100-bg
+                G 8 MD
+              .col-md-8.blue-grey-200-bg
+                G 8
+              .col-md-8.blue-grey-100-bg
+                G 8
             %h4 Large 750px
+            %p 
+              Collapse to 100% width stacking at 750px screen size with 
+              %code .col-lg-12
             .row.no-gutter.mvxl
-              .col-lg-1.mdl-color--deep-purple-600
-                G 1 LG
-              .col-lg-1.mdl-color--purple-600
-                G 1
-              .col-lg-1.mdl-color--deep-purple-600
-                G 1
-              .col-lg-9.mdl-color--purple-600
-                G 9
-              .col-lg-1.mdl-color--deep-purple-600
-                G 1
-              .col-lg-1.mdl-color--purple-600
-                G 1
-              .col-lg-1.mdl-color--deep-purple-600
-                G 1
-              .col-lg-9.mdl-color--purple-600
-                G 9
+              .col-lg-12.blue-grey-100-bg
+                G 12 LG
+              .col-lg-12.blue-grey-200-bg
+                G 12
+              
          
         %section#links
           .section-content.margin-auto.paxl.mdl-color--white
