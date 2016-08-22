@@ -38,7 +38,7 @@ title: 8pt Foundation Styleguide
         %section#get-started
           .section-content.margin-auto.paxl.mdl-color--white
             %h3 Get Started
-            %a.button.btn-highlight.btn-lg{:href => "https://github.com/edahl9/middleman-starter", :target => "_blank"} Download
+            %a.button.btn-highlight.btn-lg{:href => "https://github.com/elliotdahl/middleman-starter", :target => "_blank"} Download
             %p.mtm.mbn Version: 0.1
         %section#buttons
           .section-content.margin-auto.paxl.mdl-color--white
@@ -74,18 +74,10 @@ title: 8pt Foundation Styleguide
             .section-format.mbxl
               %button.btn-default.disabled{:disabled => ""} Button
               %button.btn-default-alt.disabled{:disabled => ""} Alt Button
+              %button.disabled{:disabled => ""} Ghost
             %h4 Icon Buttons
             .section-format.mbxl
-              .mbxl
-                %button.btn-default.btn-lg
-
-                  .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
-                  %div large
-                %button.btn-default.btn-lg.btn-icon
-                  .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
-              .mbxl
+              %div
                 %button.btn-default 
 
                   .svgicon
@@ -101,27 +93,11 @@ title: 8pt Foundation Styleguide
                   .svgicon
                     =partial 'images/svg-lib/ic_add_48px.svg'
                 
-              %div
-                %button.btn-default.btn-sm
-                  .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
-                  small
-                %button.btn-default.btn-icon.btn-sm
-                  .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+              
                 
             %h4 Button Loaders
             .section-format.mbxl
-              .mbxl
-                %button.btn-default.btn-sm
-                  Small Load
-                  =partial 'images/loading/spinner-sm.svg'
-                %button.btn-default
-                  Loading
-                  =partial 'images/loading/spinner-sm.svg'
-                %button.btn-default.btn-lg
-                  Large Load
-                  =partial 'images/loading/spinner-sm.svg'
+              
               .mbxl
                 %button.btn-default
                   Loading
@@ -152,11 +128,35 @@ title: 8pt Foundation Styleguide
                   =partial 'images/loading/spinner-sm.svg'
             %h4 Sizes
             .section-format.mbxl
-              %button.btn-default.btn-sm 
-                %div small
-              %button.btn-default default
-              %button.btn-default.btn-lg 
-                %div large
+              .mbxl
+                %button.btn-default.btn-sm 
+                  %div small
+                %button.btn-default default
+                %button.btn-default.btn-lg 
+                  %div large
+              .mbxl
+                %button.btn-default.btn-sm
+                  Small Load
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-default
+                  Loading
+                  =partial 'images/loading/spinner-sm.svg'
+                %button.btn-default.btn-lg
+                  Large Load
+                  =partial 'images/loading/spinner-sm.svg'
+              %div
+                %button.btn-default.btn-sm
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  %div small
+                %button.btn-default
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  %div default
+                %button.btn-default.btn-lg
+                  .svgicon
+                    =partial 'images/svg-lib/ic_add_48px.svg'
+                  %div large
             %h4 Button Groups
             %p Ensure HAML button elements have no space between them (>)
             .section-format
