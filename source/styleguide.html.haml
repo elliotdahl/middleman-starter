@@ -315,13 +315,27 @@ title: 8pt Foundation Styleguide
               .col-xs-offset-8
               .col-xs-8.blue-grey-200-bg
                 G 8
+            %h4 Flex Tools
+            .row.no-gutter.mvxl
+              .col-xs-2.blue-grey-100-bg
+                %div G 2
+                %div G 2 div 2
+                %div G 2 div 3
+              .col-xs-3.blue-grey-200-bg.end-xs
+                G 3 end
+              .col-xs-3.blue-grey-100-bg.center-xs
+                G 3 center
+              .col-xs-3.blue-grey-200-bg.bottom-xs
+                G 3 bottom
+              .col-xs.blue-grey-100-bg.last-xs
+                G 3 last
             %h4 Padding Horizontal Base
             %p 
               Adding 
-              %code .col-phl
+              %code .col-pan
               to the
               %code .row
-              element will include the base padding horizontally while pulling negatively left and right 
+              element will remove the horizontal padding and remove the left and right negative margin pulls.
             .row.no-gutter.mvxl.col-phl
               .col-xs-2.blue-grey-200-bg
                 G 2

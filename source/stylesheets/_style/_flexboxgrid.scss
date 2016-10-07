@@ -48,11 +48,12 @@
     -webkit-box-direction: reverse;
     flex-direction: column-reverse;
 }
+
 //Add column paddings. No native padding on columns.
-.col-phl {
-    div[class^="col-"]{
-        padding-right: $spacing-base;
-        padding-left: $spacing-base;
+.col-pan {
+    div[class^="col-"] {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -88,6 +89,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
 }
 
 .col-xs {
@@ -465,6 +468,8 @@
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     width: 100%;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
 }
 
 @media only screen and (min-width: 480px) {
@@ -790,6 +795,8 @@
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     width: 100%;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
 }
 
 @media only screen and (min-width: 620px) {
@@ -1115,6 +1122,8 @@
     -webkit-box-flex: 0;
     flex: 0 0 auto;
     width: 100%;
+    padding-right: $spacing-base;
+    padding-left: $spacing-base;
 }
 
 @media only screen and (min-width: 750px) {
