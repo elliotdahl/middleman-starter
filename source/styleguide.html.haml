@@ -287,7 +287,57 @@ title: 8pt Foundation Styleguide
                   .svgicon.invalid
                     =partial 'images/svg-lib/ic_clear_48px.svg'
                   .invalid-text Error please try again
-             
+        %section#grids
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header New Flex Grid 
+            %h4 New Grid Basic
+            .grid.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column  
+            %h4 Gutters
+            %p 
+              Adding 
+              %code .grid-gutters
+              onto the 
+              %code .grid
+              element will add negative margins to it and add internal padding to every
+              %code .col
+              inside of it.
+            .grid.grid-gutters.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column   
+            %h4 Vertical Alignments
+            %p
+              Adding the following modifier classes to the 
+              %code .col
+              will allow you to change vertical alignment
+            .grid.grid-gutters.mvxl
+              .col.col-top
+                .sg-box
+                  %code .col-top
+              .col.col-center
+                .sg-box
+                  %code .col-center
+              .col
+                .sg-box
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet.
+              .col.col-bottom
+                .sg-box
+                  %code .col-bottom
         %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Grid
@@ -308,6 +358,8 @@ title: 8pt Foundation Styleguide
                 G 1
               .col-xs-9.blue-grey-200-bg
                 G 9
+            
+               
             %h4 Offset
             .row.no-gutter.mvxl
               .col-xs-8.blue-grey-100-bg
