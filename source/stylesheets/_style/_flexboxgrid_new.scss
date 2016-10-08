@@ -350,7 +350,7 @@
 //////////////////
 @media only screen and (max-width: 480px) {
     .grid-sm {
-        .col {
+        .col-sm {
             flex:100%;
         }
     }
@@ -358,7 +358,7 @@
 
 @media only screen and (max-width: 620px) {
     .grid-md {
-        .col {
+        .col-md {
             flex:100%;
         }
     }
@@ -366,7 +366,7 @@
 
 @media only screen and (max-width: 750px) {
     .grid-lg {
-        .col {
+        .col-lg {
             flex:100%;
         }
     }
