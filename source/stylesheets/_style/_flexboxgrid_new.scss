@@ -81,6 +81,7 @@
     -ms-flex-item-align: center;
     align-self: center;
 }
+
 /////////////////////////
 //Percent Based Columns
 /////////////////////////
@@ -342,4 +343,31 @@
 
 .col-offset-23 {
     margin-left: 95.83333%;
+}
+
+//////////////////
+//Media Queries
+//////////////////
+@media only screen and (max-width: 480px) {
+    .grid-sm {
+        .col {
+            flex:100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .grid-md {
+        .col {
+            flex:100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .grid-lg {
+        .col {
+            flex:100%;
+        }
+    }
 }
