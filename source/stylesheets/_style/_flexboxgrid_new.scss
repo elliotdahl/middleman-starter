@@ -3,7 +3,7 @@
     background-color: $mdl-color-blue-grey-50;
     width: 100%;
     border-radius: 2px;
-    border: solid 1px $mdl-color-blue-grey-200;
+    //border: solid 1px $mdl-color-blue-grey-200;
     padding: $spacing-base;
 }
 
@@ -26,11 +26,12 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    //Use this if you are going to use margin spacing
-    &.grid-gutters {
-        margin: 0 (-1*$spacing-base) 0 (-1*$spacing-base);
+    margin: 0 (-1*$spacing-base) 0 (-1*$spacing-base);
+    //Use this to remove spacing
+    &.grid-nogutter {
+        margin: 0;
         & > .col {
-            padding: 0 $spacing-base 0 $spacing-base;
+            padding: 0;
         }
     }
 }
@@ -48,6 +49,7 @@
     -webkit-flex-basis: 0;
     flex-basis: 0;
     max-width: 100%;
+    padding: 0 $spacing-base 0 $spacing-base;
 }
 
 ////////////////////////

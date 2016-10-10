@@ -304,13 +304,13 @@ title: 8pt Foundation Styleguide
             %h4 Gutters
             %p 
               Adding 
-              %code .grid-gutters
+              %code .grid-nogutters
               onto the 
               %code .grid
-              element will add negative margins to it and add internal padding to every
+              element will remove negative margins and remove internal padding to every
               %code .col
               inside of it.
-            .grid.grid-gutters.mvxl
+            .grid.grid-nogutter.mvxl
               .col
                 .sg-box
                   Column 
@@ -325,7 +325,7 @@ title: 8pt Foundation Styleguide
               Adding the following modifier classes to the 
               %code .col
               will allow you to change vertical alignment
-            .grid.grid-gutters.mvxl
+            .grid.mvxl
               .col.col-top
                 .sg-box
                   %code .col-top
@@ -343,7 +343,7 @@ title: 8pt Foundation Styleguide
               Adding a column number modifier class to the column like
               %code .col.col-4
               to get the percentage of 4/24 columns. Additional columns without modifier classes will be auto scaled.
-            .grid.grid-gutters.mvxl
+            .grid.mvxl
               .col.col-12
                 .sg-box
                   50% with 
@@ -358,7 +358,7 @@ title: 8pt Foundation Styleguide
               .col
                 .sg-box
                   Auto
-            .grid.grid-gutters.mvxl
+            .grid.mvxl
               .col.col-4
                 .sg-box 
                   %code .col-4
@@ -382,7 +382,7 @@ title: 8pt Foundation Styleguide
               Adding a column number offset modifier class to the column like
               %code .col.col-offset-4
               to get the percentage of 4/24 column offset.
-            .grid.grid-gutters.mvxl
+            .grid.mvxl
               .col
                 .sg-box
                   Auto
@@ -398,7 +398,7 @@ title: 8pt Foundation Styleguide
                   Auto
             %h4 Multi Media Break Columns
             %p Mix all the cols 
-            .grid.grid-gutters.grid-lg.grid-md.mvxl
+            .grid.grid-lg.grid-md.mvxl
               .col.col-md
                 .sg-box
                   %code .col-md 
@@ -417,7 +417,7 @@ title: 8pt Foundation Styleguide
               %code .grid.grid-sm
               and add the column modifier class to the desired columns
               %code .col.col-sm
-            .grid.grid-gutters.grid-sm.mvxl
+            .grid.grid-sm.mvxl
               .col
                 .sg-box
                   Column 
@@ -436,7 +436,7 @@ title: 8pt Foundation Styleguide
               %code .grid.grid-md
               and add the column modifier class to the desired columns
               %code .col.col-md
-            .grid.grid-gutters.grid-md.mvxl
+            .grid.grid-md.mvxl
               .col
                 .sg-box
                   Column 
@@ -455,7 +455,7 @@ title: 8pt Foundation Styleguide
               %code .grid.grid-lg
               and add the column modifier class to the desired columns
               %code .col.col-lg
-            .grid.grid-gutters.grid-lg.mvxl
+            .grid.grid-lg.mvxl
               .col
                 .sg-box
                   Column 
