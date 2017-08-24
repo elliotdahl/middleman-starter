@@ -10,5 +10,5 @@ task :pws_deploy => :build do
  system("git push")
  system("touch build/Staticfile")
  system("cf target -o elliot-org -s projects")
- system("cf zero-downtime-push middleman-starter -f manifest.yml -p ./build")
+ system("cf zero-downtime-push middleman-starter-app -f manifest.yml -p ./build")
 end
