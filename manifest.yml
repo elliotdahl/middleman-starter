@@ -1,5 +1,0 @@
-applications:
-- name: middleman-starter-app
-  memory: 64M
-  instances: 1
-  buildpack: staticfile_buildpack

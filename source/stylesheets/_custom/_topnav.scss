@@ -1,0 +1,53 @@
+.top {
+  height: 80px;
+  background-color: $pblue7;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav {
+  height: 48px;
+  background-color: $pblue6;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  .nav-trigger {
+    position: relative;
+    padding: 0 24px;
+    margin: 0 48px;
+    &:hover {
+      background-color:$pblue5;
+      .nav-dropmenu {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+  }
+  .nav-dropmenu {
+    z-index: 100;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width:272px;
+    padding:16px;
+    box-shadow: 0px 2px 4px rgba(81, 80, 85, 0.08), 0px 0px 8px rgba(81, 80, 85, 0.18), 0px 0px 2px rgba(44, 43, 46, 0.18);
+    background-color:#fff;
+    color: $pblue6;
+    opacity:0;
+    pointer-events: none;
+    border-radius: 0px 0px 4px 4px;
+    &::after {
+      content: "";
+      position: absolute;
+      top:-5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width:0;
+      height:0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid white;
+    }
+  }
+}
